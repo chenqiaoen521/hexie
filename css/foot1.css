@@ -1,0 +1,68 @@
+/* CSS Document */
+
+/*main*/
+.main{}
+	.guide{line-height:30px; color:#555555; font-size:14px; clear:both;}
+	.guide a{color:#555555;}
+	.guide a:hover{ text-decoration:underline;color:#bc0000;}
+	.sub{ overflow:hidden; margin-top:10px;}
+		.sub_nav{ float:left; overflow:hidden; width:220px;border:#e6e6e6 1px solid; border-bottom:none !important;}
+		.sub_nav h3{border-left:#bc0000 3px solid; line-height:44px; border-bottom:#e6e6e6 1px solid;}
+		.sub_nav h3>span{  color:#333333; font-size:18px; padding-left:23px;}
+		.sub_nav ul{border-bottom:#e6e6e6 1px solid;}
+		.sub_nav ul li a{ display:block; line-height:38px; color:#565656; font-size:14px; padding-left:40px; border:#FFF 1px solid;}
+		.sub_nav ul li a:hover{/*color:#FFF;background-color:#bf9d5b; */ border:#bf9d5b 1px solid;transition:all 0.1s linear; }
+		.sub_nav .curr{ background-color:#bf9d5b; color:#FFF;border:#bf9d5b 1px solid;}
+	.text{ border:#dddddd 1px solid; float:right; overflow:hidden; width:890px; min-height:600px; padding:30px;}
+	.text h4{ color:#bf9d5b; display:block; text-align:center; font-size:20px; font-weight:bold;}
+	.text h5{ overflow:hidden; color:#FFF; padding-left:20px;font-weight:bold; font-size:16px; margin:20px 0;line-height:48px; height:48px; background-color:#bf9f62;}
+	.text i{ color:#bdbcbc; display:block; text-align:center; font-size:20px; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; padding:20px 0;}
+	.text p{ color:#666666; font-size:14px; line-height:40px; text-align:justify;}
+	.text img{ max-width:890px; margin:0 auto; padding-top:20px;}
+	.text ul{ padding:30px; overflow:hidden;}
+	.text li{ display:block; line-height:36px; color:#666666; font-size:14px;}
+	.text li>label{ display:inline-block;color:#444444; font-weight:bold;font-size:14px;}
+	.text li>a{color:#bf0000;font-size:14px;}
+	.text li>b{color:#bf0000;font-weight:bold;ont-size:16px;}
+	.text .bt{ overflow:hidden; width:890px;}
+	.text .bt p{ float:left; overflow:hidden; color:#333333; font-size:16px; font-weight: bold; width:220px; text-align:center;}
+	.text .list_dizhi{ overflow:hidden; padding:0 !important;}
+	.text .list_dizhi li{ margin:10px 0;background-color:#f0f0f0; border:#e2e2e2 1px solid; overflow:hidden;}
+	.text .dz_1{ width:280px;}
+	.text .dz_2{ width:300px;}
+	.text .dz_3{ width:180px;}
+	.text .dz_4{ width:120px;}
+	.text .list_dizhi li>span{float:left; overflow:hidden; color:#666666; font-size:12px;width:220px; text-align:center;}
+	
+	
+	/*联系方式的主要内容*/
+	.text1{ border:#dddddd 1px solid; float:right; overflow:hidden; width:952px; min-height:600px;}
+	.text1 h4{ background-color:#f0f0f0; overflow:hidden;}
+	.text1 h4>span{ float:left; overflow:hidden;color:#444444; display:block; background-color:#FFF;border-right:#dddddd 1px solid;width:200px; text-align:center; font-size:14px; line-height:50px; border-top:#d43f3f 2px solid;}
+	.text1 h4>i{ float:left;overflow:hidden;display:block;width:689px;font-size:14px; height:51px;border-bottom:#dddddd 1px solid;}
+	.text1 ul{ padding:30px; overflow:hidden;}
+	.text1 li{ display:block; line-height:36px; color:#666666; font-size:14px;}
+	.text1 li>label{ display:inline-block;width:136px;color:#444444; font-weight:bold;font-size:14px;}
+	.text1 li>a{color:#bf0000;font-size:14px;}
+	.text1 li>b{color:#bf0000;font-weight:bold;ont-size:16px;}
+
+	/*招贤纳士的主要内容*/
+	.text2{ border:#dddddd 1px solid; float:right; overflow:hidden; width:890px; min-height:600px; padding:30px;}
+	.screening{overflow:hidden;line-height:32px;}
+	.screening label{display:inline-block;color:#444444; float:left;font-weight:bold;font-size:16px;}
+	.screening p{ width:800px; overflow:hidden;float:right;}
+	.screening a{color:#666666;font-size:16px; display:inline-block; overflow:hidden;padding:0 10px;}
+	.screening .cur{color:#bf0000;}
+	.screening a:hover{color:#bf0000;}
+		.ziwei_bt{ overflow:hidden; background-color:#bf0000;line-height:50px; height:50px; color:#FFF; font-size:16px;}
+			.t1{ float:left; overflow:hidden; width:450px; padding-left:30px;}
+			.t2{ float:left; overflow:hidden; width:190px;padding-left:30px;}
+			.t3{ float:left; overflow:hidden; width:158px;padding-left:30px;}
+	.text2 ul{ border:#dddddd 1px solid; border-top:none;overflow:hidden;}
+	.text2 li{ float:left; overflow:hidden;line-height:50px; border-bottom:#dddddd 1px solid;color:#444444; font-size:14px;}
+	.text2 li:hover{color:#bf0000; cursor:pointer;}
+		.list{ overflow:hidden; padding:40px;}
+		.list label{display:inline-block;color:#444444; float:left;font-weight:bold;font-size:16px; line-height:32px;}
+		.list p{color:#333333;font-size:14px; overflow:hidden; padding:10px 0; line-height:32px;}
+		.list span{ display:block; padding:20px 0; text-align:center; color:#bf0000; font-size:16px;}
+/*main*/

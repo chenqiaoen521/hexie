@@ -1,0 +1,760 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>和谐修车网</title>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/checkdd.css" rel="stylesheet" type="text/css">
+<link href="css/laydate.css" rel="stylesheet" type="text/css">
+<link href="css/laydateskin.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.9.1.min.js" type="text/jscript"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js" type="text/jscript"></script>
+<script src="js/topbase.js" type="text/jscript"></script>
+<script src="js/PCASClass.js" type="text/javascript"></script>
+<script src="js/checkdd.js" type="text/javascript"></script>
+<script src="js/jquery.leanModal.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/laydate.dev.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script>
+$(function(){
+	$("a[rel*=leanModal]").leanModal({closeButton:".closebtn"});
+ })
+</script>
+</head>
+
+<body>
+<!--top-->
+<div class="topheader topheader1">
+  <div class="container">
+    <div class="topright"> <a href="index.html">首页</a>| <a style="color:#c20000;" rel="leanModal" href="#loginbox">登录</a>| <a rel="leanModal" href="#registerbox">注册</a>| <a href="pol_order.html">我的订单</a>| <a href="shoppingcart.html">购物车（<i>0</i>）</a>| <a href="pol_information.html">用户中心</a> </div>
+  </div>
+</div>
+<div class="toplogo">
+  <div class="container">
+    <div class="logobox"> <a href="index.html"><img src="images/indexb_10.png" alt="" class="logo"></a>
+      <p>[股票代码：03836.HK]</p>
+    </div>
+    <div class="buzhou"> <img src="images/check_03.png"> </div>
+  </div>
+</div>
+<!--top--> 
+
+<!---main-->
+<div class="main">
+  <div class="container">
+    <div class="quanbu">
+      <div class="anzhuang block">
+        <h3 class="tit">安装与配送方式</h3>
+        <div class="check_sel"> <span class="sel_title">安装方式：</span>
+          <div class="qiehuan"> <span class="radioRef" id="sm">和谐门店安装</span> <span class="radioRef" id="shangmen">上门安装</span> <span class="radioRef" id="daojia">送货到家</span> </div>
+        </div>
+        <div class="check_sel">
+          <ul>
+            <li> <span class="sel_title"><i class="red">*</i>安装门店：</span> <a rel="leanModal" href="#storebox" class="storebox">选择安装门店</a>
+              <p>
+                <label style="float:left; color:#333333; padding-left:10px;">计划到店时间：</label>
+                <input type="text" style="font-size:12px;" id="J-xl" placeholder="--指定安装时间--">
+                <select style="font-size:12px;">
+                  <option>09:00-10:00</option>
+                  <option>10:00-11:00</option>
+                  <option>11:00-12:00</option>
+                  <option>12:00-13:00</option>
+                  <option>13:00-14:00</option>
+                  <option>14:00-15:00</option>
+                  <option>15:00-16:00</option>
+                  <option>17:00-18:00</option>
+                </select>
+              </p>
+            </li>
+            <li> <span class="sel_title">预约时间：</span>
+              <input type="text" id="J-x" placeholder="--指定安装时间--">
+              <select>
+                <option>09:00-10:00</option>
+                <option>10:00-11:00</option>
+                <option>11:00-12:00</option>
+                <option>12:00-13:00</option>
+                <option>13:00-14:00</option>
+                <option>14:00-15:00</option>
+                <option>15:00-16:00</option>
+                <option>17:00-18:00</option>
+              </select>
+              <p>（仅部分地区支持）</p>
+            </li>
+            <li style="margin-bottom:-70px;"></li>
+          </ul>
+        </div>
+        <script type="text/javascript">
+        laydate({
+            elem: '#J-xl'
+        });
+        laydate({
+            elem: '#J-x'
+        });
+		
+		jQuery(".anzhuang").slide({mainCell:".check_sel ul",titCell:".qiehuan .radioRef",trigger:"click",titOnClassName:"checked"});
+</script> 
+      </div>
+      <div class="lianxiren block">
+        <h3 class="tit">联系人信息</h3>
+        <div class="xinxibox" id="xinxi">
+          <div class="already">
+            <div class="infor1">
+              <p class="name"><span>苏伟民</span> 收</p>
+              <p class="tel">15698756238</p>
+            </div>
+          </div>
+          <div class="newadress">更换联系人信息</div>
+          <div class="fillin">
+            <div class="con"> <span class="t1"> <span class="red">*</span> 收货人姓名： </span>
+              <input id="addressconsignees" type="text" placeholder="请输入姓名" value="" name="receiver">
+              <!--<span class="pay_youhui">
+<a class="pleaseloginin" where="收件人"  rel="leanModal" href="#loginbox">登录</a>
+下单更快捷
+</span>--> 
+            </div>
+            <div class="con"> <span class="t1"> <span class="red">*</span> 手机号码： </span>
+              <input id="addressphone" type="text" placeholder="请输入手机号" value="" name="usermobile">
+            </div>
+              <input type="button" class="btn" value="确认">
+          </div>
+        </div>
+        <div class="xinxibox" id="dizhi">
+          <div class="already">
+            <div class="infor1">
+              <p class="name"><span>苏伟民</span> 收</p>
+              <p class="tel">15698756238</p>
+            </div>
+            <p class="infor2">河南省  郑州市</p>
+            <p class="infor3">中州大道郑汴路15号</p>
+            <a class="default">默认地址</a> </div>
+          <div class="newadress">更换联系人信息</div>
+          <div class="fillin">
+            <div class="con"> <span class="t1"> <span class="red">*</span> 收货人姓名： </span>
+              <input id="addressconsignees" type="text" placeholder="请输入姓名" value="" name="receiver">
+              <!--<span class="pay_youhui">
+<a class="pleaseloginin" where="收件人"  rel="leanModal" href="#loginbox">登录</a>
+下单更快捷
+</span>--> 
+            </div>
+            <div class="con"> <span class="t1"> <span class="red">*</span> 手机号码： </span>
+              <input id="addressphone" type="text" placeholder="请输入手机号" value="" name="usermobile">
+            </div>
+            <div class="con"> <span class="t1" style="line-height:30px;"> <span class="red">*</span> 收货地址： </span>
+              <select name="P1" type="text" placeholder="--请选择省份--" class="dizhi">
+              </select>
+              <select name="C1" type="text" placeholder="--请选择市/区--" class="dizhi">
+              </select>
+              <textarea placeholder="收货地址："></textarea>
+            </div>
+              <input type="button" class="btn" value="确认">
+          </div>
+        </div>
+      </div>
+      <div class="shangpinqd block">
+        <h3 class="tit">商品清单</h3>
+        <ul class="sptit">
+          <li>商品名称 </li>
+          <li>价格</li>
+          <li>数量</li>
+          <li>小计</li>
+        </ul>
+        <ul class="piece">
+          <li>
+            <p>Shell/壳牌 灰喜力HX8 灰壳5W40 SN级全合成机油 （4L装） </p>
+          </li>
+          <li>￥255.0 </li>
+          <li>1</li>
+          <li>￥255.0 </li>
+        </ul>
+        <ul class="piece">
+          <li>
+            <p>壳牌机油 壳牌灰喜力 HX8灰壳全合成机油 5W-40 SN （1L）</p>
+          </li>
+          <li>￥255.0 </li>
+          <li>1</li>
+          <li>￥255.0 </li>
+        </ul>
+        <ul class="piece">
+          <li>
+            <p>马勒/MAHLE  机油滤清器 0C1022 </p>
+          </li>
+          <li>￥255.0 </li>
+          <li>1</li>
+          <li>￥255.0 </li>
+        </ul>
+        <ul class="piece">
+          <li>
+            <p>道达尔/Ttoal  发动机清洗油  4L</p>
+          </li>
+          <li>￥255.0 </li>
+          <li>1</li>
+          <li>￥255.0 </li>
+        </ul>
+      </div>
+      <div class="anzhuangfei block">
+        <h3 class="tit">安装费说明</h3>
+        <ul class="sptit">
+          <li class="fwxm">服务项目</li>
+          <li class="fwbz">服务标准</li>
+          <li class="sfbz">收费标准</li>
+          <li class="bz">备注</li>
+        </ul>
+        <ul class="piece">
+          <li class="fwxm">
+            <p>更换机油及机油滤清器</p>
+          </li>
+          <li class="fwbz">
+            <p>本项目不含清楚保养等服务，是否需要解码及其费用，需与安装店协商</p>
+          </li>
+          <li class="sfbz"><span>￥30.00</span></li>
+          <li class="bz">
+            <p>本项目不含清楚保养等服务，是否需要解码及其费用，需与安装店协商</p>
+          </li>
+        </ul>
+        <ul class="piece">
+          <li class="fwxm">
+            <p>更换机油及机油滤清器</p>
+          </li>
+          <li class="fwbz">
+            <p>本项目不含清楚保养等服务，是否需要解码及其费用，需与安装店协商</p>
+          </li>
+          <li class="sfbz"><span>￥30.00</span></li>
+          <li class="bz">
+            <p>本项目不含清楚保养等服务，是否需要解码及其费用，需与安装店协商</p>
+          </li>
+        </ul>
+      </div>
+      <div class="zhifu block">
+        <h3 class="tit">支付及其他</h3>
+        <div class="row"> <span class="rleft">支付方式：</span>
+          <div class="rright">
+            <label for="zhifu" id="dd" class="radioZf">
+              <input type="radio" checked name="zhifu">
+              <span><img src="images/check_23.png">到店支付</span></label>
+            <label for="zhifu" id="zz" class="radioZf">
+              <input type="radio" name="zhifu">
+              <span><img src="images/check_26.png">支付宝支付</span></label>
+          </div>
+        </div>
+        <div class="row"> <span class="rleft">优惠券：</span>
+          <div class="rright">
+            <p>您账户中暂无可使用优惠券</p>
+          </div>
+        </div>
+        <div class="row"> <span class="rleft">留言：</span>
+          <div class="rright">
+            <textarea></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jisuan">
+      <div class="row1"> <span> ￥549.00</span>
+        <p>商品总金额：</p>
+      </div>
+      <div class="row1"> <span> ￥159.00</span>
+        <p>安装费 |<a rel="leanModal" href="#explain"> 安装及费用标准说明</a><img src="images/baoyangxm_28.png">:</p>
+      </div>
+      <div class="row1 small"> <span> ￥0.00</span>
+        <p>运费：</p>
+      </div>
+      <div class="row1 small"> <span> ￥0.00</span>
+        <p>优惠券：</p>
+      </div>
+      <div class="row1 big"> <span> ￥708.00</span>
+        <p>应付金额：</p>
+      </div>
+    </div>
+    <div class="tijiao" id="tijiao"> <a href="pay.html">提交订单</a> </div>
+    <div class="tijiao" id="zhifu" style="display:none;"> <a href="pay.html">立即支付</a> </div>
+  </div>
+</div>
+<script>
+$("#dizhi").hide();
+$('#sm').click(function(){
+	$("#dizhi").hide();
+	$("#xinxi").show();
+	$("#dd").show();
+	$("#zhifu").hide();
+	$("#tijiao").show();
+})
+$('#shangmen').click(function(){
+	$("#xinxi").hide();
+	$("#dizhi").show();
+	$("#dd").hide();
+	$("#zz").show();
+	$("#tijiao").hide();
+	$("#zhifu").show();
+})
+$('#daojia').click(function(){
+	$("#xinxi").hide();
+	$("#dizhi").show();
+	$("#dd").hide();
+	$("#zz").show();
+	$("#tijiao").hide();
+	$("#zhifu").show();
+})
+</script> 
+<!---main->
+
+<!--footer-->
+<div class="footer">
+  <div class="container">
+    <dl class="foot">
+      <dt>服务简介</dt>
+      <dd><a href="foot_process.html">服务流程</a></dd>
+      <dd><a href="foot_security.html">服务保障</a></dd>
+      <dd><a href="foot_warranty.html">产品保修</a></dd>
+      <dd><a href="foot_agreement.html">用户协议</a></dd>
+    </dl>
+    <dl class="foot">
+      <dt>支付方式</dt>
+      <dd><a href="foot_treasure.html">支付宝支付</a></dd>
+      <dd><a href="foot_payment.html">到店付款</a></dd>
+    </dl>
+    <dl class="foot">
+      <dt>服务热线</dt>
+      <dd>400-916-1999</dd>
+      <dd>周一至周日</dd>
+      <dd>8:00-22:00</dd>
+    </dl>
+    <dl class="foot">
+      <dt>服务网络</dt>
+      <dd><a href="network_map.html">服务网络地图</a></dd>
+    </dl>
+    <dl class="foot">
+      <dt>联系我们</dt>
+      <dd><a href="foot_cooperation.html">广告与市场合作</a></dd>
+      <dd><a href="foot_contact.html">联系方式</a></dd>
+      <dd><a href="foot_phone.html">投诉电话</a></dd>
+      <dd><a href="foot_recruitment.html">招贤纳士</a></dd>
+    </dl>
+  </div>
+</div>
+<!--footer--> 
+
+<!--右侧快捷方式-->
+<div class="quick">
+  <ul>
+    <li> <img src="images/indexb_42.png" class="nth-child1"> <img src="images/indexb_422.png" class="nth-child2"> <span><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2853102678&site=qq&menu=yes">在线咨询</a></span> </li>
+    <li class="weixin"> <img src="images/indexb_52.png" class="nth-child1"> <img src="images/indexb_522.png" class="nth-child2"> <span class="weixin">微信</span>
+      <div class="code"> <img src="images/indexp_49.jpg" alt=""> </div>
+    </li>
+    <li class="shouji"> <img src="images/indexb_64.png" class="nth-child1"> <img src="images/indexb_642.png" class="nth-child2"> <span><a href="">手机网站</a></span>
+      <div class="code1"> <img src="images/indexp_49.jpg" alt=""> </div>
+    </li>
+    <li> <a href=""><img src="images/shouye_06.png" class="nth-child1"></a> <a href=""><img src="images/shouye_062.png" class="nth-child2"></a> <span><a class="tianmao" href="">天猫店</a></span> </li>
+    <li> <a href=""><img src="images/shouye_10.png" class="nth-child1"></a> <a href=""><img src="images/shouye_102.png" class="nth-child2"></a> <span><a class="jingdong" href="">京东店</a></span> </li>
+    <li class="gotop"> <img src="images/indexb_76.png" class="nth-child1"> <img src="images/indexb_762.png" class="nth-child2"> <span>返回顶部</span> </li>
+  </ul>
+</div>
+<!--右侧快捷方式--> 
+
+<!--城市选择弹窗-->
+<div id="selectcity" class="popbox">
+  <div class="popmain"> <span class="closebtn"></span>
+    <h3>城市选择</h3>
+    <div class="hot">
+      <h4>热门城市</h4>
+      <div class="tip"> <a href="">郑州</a> <a href="">北京</a> <a href="">上海</a> <a href="">广州</a> <a href="">深圳</a> <a href="">济南</a> <a href="">武汉</a> <a href="">西安</a> <a href="">杭州</a> <a href="">重庆</a> </div>
+    </div>
+    <div class="choose"> <span>按省份选择：</span>
+      <select name="P1">
+      </select>
+      <select name="C1">
+      </select>
+      <button>确定</button>
+    </div>
+    <script language="javascript" defer>
+	new PCAS("P1","C1");
+	</script> 
+  </div>
+</div>
+<!--城市选择弹窗--> 
+
+<!--登录弹窗开始-->
+<div id="loginbox" class="popbox">
+  <div class="popmain"> <span class="closebtn"></span>
+    <h3>登录</h3>
+    <div class="login">
+      <p>手机:</p>
+      <input style="background:url(images/login_03.png) no-repeat 230px center;">
+      <p>密码：</p>
+      <input style="background:url(images/login_06.png) no-repeat 230px center;">
+      <div class="link"> <a rel="leanModal" href="#forgetbox" onClick="$('#loginbox').hide();" class="wangji">忘记密码？</a><a href="#registerbox" rel="leanModal" onClick="$('#loginbox').hide();" class="zhuce">免费注册账号</a> </div>
+      <button>登录</button>
+    </div>
+  </div>
+</div>
+<!--登录弹窗结束--> 
+
+<!--注册弹窗开始-->
+<div id="registerbox" class="popbox">
+  <div class="popmain"> <span class="closebtn"></span>
+    <h3>注册</h3>
+    <div class="login">
+      <p>手机：</p>
+      <input style="background:url(images/login_03.png) no-repeat 230px center;">
+      <p>车型：</p>
+      <input style="background:url(images/login_04.png) no-repeat 230px center;" placeholder="请输入车型信息，如：宝马525i">
+      <p>密码：</p>
+      <input style="background:url(images/login_06.png) no-repeat 230px center;">
+      <p>确认密码：</p>
+      <input style="background:url(images/login_06.png) no-repeat 230px center;">
+      <p>验证码：</p>
+      <div class="yanzheng">
+        <input>
+        <img src="images/login_09.png"> <a href="">换一张</a> </div>
+      <p>短信验证码：</p>
+      <div class="yanzheng1">
+        <input>
+        <a href="">获取短信验证码</a> </div>
+      <div class="read">
+        <input type="radio" checked="checked" name="check1" value="check1">
+        <label name="check1" class="remember" for="nba"></label>
+        已经同意并阅读《<a href="foot_agreement.html">和谐汽车网用户注册条款</a>》 </div>
+      <button>注册</button>
+    </div>
+  </div>
+</div>
+<!--注册弹窗结束--> 
+
+<!--忘记密码开始-->
+<div id="forgetbox" class="popbox">
+  <div class="popmain"> <span class="closebtn"></span>
+    <h3>找回密码</h3>
+    <div class="login">
+      <p>手机：</p>
+      <input style="background:url(images/login_03.png) no-repeat 230px center;">
+      <p>验证码：</p>
+      <div class="yanzheng">
+        <input>
+        <img src="images/login_09.png"> <a href="">换一张</a> </div>
+      <a href="" class="button">获取密码</a> <a rel="leanModal" href="#loginbox" onClick="$('#forgetbox').hide();" class="button">立即登录</a> </div>
+  </div>
+</div>
+<!--忘记密码结束--> 
+
+<!--选择车型弹窗开始-->
+<div id="lovecar"> <span class="closebtn"></span>
+  <div class="popmain">
+    <h3>车型选择</h3>
+    <div class="foursteps1"> <span id="cx1" class="head_div2"> <span id="cxspan1" class="round">1</span> 选择品牌 </span> <span id="cx2" class="head_div3"> <span id="cxspan2" class="round2">2</span> 选择车系 </span> <span id="cx3" class="head_div3"> <span id="cxspan3" class="round2">3</span> 选择排量 </span> <span id="cx4" class="head_div3"> <span id="cxspan4" class="round2">4</span> 生产年份 </span> </div>
+    <div class="choosed">
+      <div class="ct">已选车型：</div>
+      <div class="CarHistoryTitlediv data-index1">
+        <div class="CarHistoryTitle"> 宝马</div>
+        <div class="CarHistoryTitleDel"></div>
+      </div>
+      <div class="CarHistoryTitlediv data-index2">
+        <div class="CarHistoryTitle">2系</div>
+        <div class="CarHistoryTitleDel"></div>
+      </div>
+      <div class="CarHistoryTitlediv data-index3">
+        <div class="CarHistoryTitle">3.0T</div>
+        <div class="CarHistoryTitleDel"></div>
+      </div>
+      <div class="CarHistoryTitlediv data-index4">
+        <div class="CarHistoryTitle">2014</div>
+        <div class="CarHistoryTitleDel"></div>
+      </div>
+    </div>
+    <div class="step step1">
+      <ul>
+        <li><img src="images/car_18.png" alt=""><span>宝马</span></li>
+        <li><img src="images/car_20.png" alt=""><span>奔驰</span></li>
+        <li><img src="images/car_22.png" alt=""><span>奥迪</span></li>
+        <li><img src="images/car_24.png" alt=""><span>捷豹</span></li>
+        <li><img src="images/car_30.png" alt=""><span>路虎</span></li>
+        <li><img src="images/car_31.png" alt=""><span>沃尔沃</span></li>
+        <li><img src="images/car_32.png" alt=""><span>宝马</span></li>
+        <li><img src="images/car_33.png" alt=""><span>雷克萨斯</span></li>
+        <li><img src="images/car_38.png" alt=""><span>保时捷</span></li>
+        <li><img src="images/car_39.png" alt=""><span>法拉利</span></li>
+        <li><img src="images/car_40.png" alt=""><span>宾利</span></li>
+        <li><img src="images/car_41.png" alt=""><span>劳斯莱斯</span></li>
+        <li><img src="images/car_46.png" alt=""><span>兰博基尼</span></li>
+        <li><img src="images/car_47.png" alt=""><span>英菲尼迪</span></li>
+        <li><img src="images/car_48.png" alt=""><span>讴歌</span></li>
+        <li><img src="images/car_49.png" alt=""><span>红旗</span></li>
+        <li><img src="images/car_54.png" alt=""><span>大众</span></li>
+        <li><img src="images/car_55.png" alt=""><span>福特</span></li>
+        <li><img src="images/car_56.png" alt=""><span>丰田</span></li>
+        <li><img src="images/car_57.png" alt=""><span>本田</span></li>
+        <li><img src="images/car_62.png" alt=""><span>现代</span></li>
+      </ul>
+    </div>
+    <div class="step step2">
+      <div class="lei"><span>华晨宝马</span></div>
+      <ul>
+        <li>3系</li>
+        <li>3系</li>
+        <li>3系</li>
+      </ul>
+      <div class="lei"><span>宝马进口</span></div>
+      <ul>
+        <li>1系</li>
+        <li>2系</li>
+        <li>3系</li>
+        <li>4系</li>
+        <li>5系</li>
+        <li>6系</li>
+        <li>7系</li>
+        <li>i系</li>
+        <li>M系</li>
+        <li>X系</li>
+        <li>Z系</li>
+      </ul>
+    </div>
+    <div class="step step3">
+      <ul>
+        <li>3.0T</li>
+      </ul>
+    </div>
+    <div class="step step4">
+      <ul>
+        <li>2015年生产</li>
+        <li>2014年生产</li>
+        <li>2013年生产</li>
+        <li>2012年生产</li>
+      </ul>
+    </div>
+    <div class="step step5">
+      <div class="sucess"><img src="images/sucess.png"><span>车型选择成功</span></div>
+      <p>已选车型：宝马 335Li3.0T2013年产</p>
+    </div>
+  </div>
+</div>
+<!--选择车型弹窗结束--> 
+
+<!--选择门店-->
+<div id="storebox"> <span class="closebtn"></span>
+  <div class="cleft">
+    <div class="fenlei">
+      <select name="P2">
+      </select>
+      <select name="C2">
+      </select>
+    </div>
+    <script language="javascript" defer>
+	new PCAS("P2","C2");
+	</script>
+    <div class="dian">
+      <ul>
+        <li>
+          <h3>和谐修车郑东新区会展中心店</h3>
+          <div class="store"> <img src="images/store1.png" alt="">
+            <div class="contact">
+              <p class="telnum">电话：400- 919 -9195</p>
+              <p class="address">地址：北京市亦庄经济技术开发区中和街16号</p>
+              <!--<a href="#" class="yuyue">确定预约</a>--> 
+            </div>
+          </div>
+        </li>
+        <li>
+          <h3>和谐修车郑东新区会展中心店</h3>
+          <div class="store"> <img src="images/store1.png" alt="">
+            <div class="contact">
+              <p class="telnum">电话：400- 919 -9195</p>
+              <p class="address">地址：北京市亦庄经济技术开发区中和街16号</p>
+              <!--<a href="#" class="yuyue">确定预约</a>--> 
+            </div>
+          </div>
+        </li>
+        <li>
+          <h3>和谐修车郑东新区会展中心店</h3>
+          <div class="store"> <img src="images/store1.png" alt="">
+            <div class="contact">
+              <p class="telnum">电话：400- 919 -9195</p>
+              <p class="address">地址：北京市亦庄经济技术开发区中和街16号</p>
+              <!--<a href="#" class="yuyue">确定预约</a>--> 
+            </div>
+          </div>
+        </li>
+        <li>
+          <h3>和谐修车郑东新区会展中心店</h3>
+          <div class="store"> <img src="images/store1.png" alt="">
+            <div class="contact">
+              <p class="telnum">电话：400- 919 -9195</p>
+              <p class="address">地址：北京市亦庄经济技术开发区中和街16号</p>
+              <!--<a href="#" class="yuyue">确定预约</a>--> 
+            </div>
+          </div>
+        </li>
+        <li>
+          <h3>和谐修车郑东新区会展中心店</h3>
+          <div class="store"> <img src="images/store1.png" alt="">
+            <div class="contact">
+              <p class="telnum">电话：400- 919 -9195</p>
+              <p class="address">地址：北京市亦庄经济技术开发区中和街16号</p>
+              <!--<a href="#" class="yuyue">确定预约</a>--> 
+            </div>
+          </div>
+        </li>
+        <li>
+          <h3>和谐修车郑东新区会展中心店</h3>
+          <div class="store"> <img src="images/store1.png" alt="">
+            <div class="contact">
+              <p class="telnum">电话：400- 919 -9195</p>
+              <p class="address">地址：北京市亦庄经济技术开发区中和街16号</p>
+              <!--<a href="#" class="yuyue">确定预约</a>--> 
+            </div>
+          </div>
+        </li>
+        <li>
+          <h3>和谐修车郑东新区会展中心店</h3>
+          <div class="store"> <img src="images/store1.png" alt="">
+            <div class="contact">
+              <p class="telnum">电话：400- 919 -9195</p>
+              <p class="address">地址：北京市亦庄经济技术开发区中和街16号</p>
+              <!--<a href="#" class="yuyue">确定预约</a>--> 
+            </div>
+          </div>
+        </li>
+        <li>
+          <h3>和谐修车郑东新区会展中心店</h3>
+          <div class="store"> <img src="images/store1.png" alt="">
+            <div class="contact">
+              <p class="telnum">电话：400- 919 -9195</p>
+              <p class="address">地址：北京市亦庄经济技术开发区中和街16号</p>
+              <!--<a href="#" class="yuyue">确定预约</a>--> 
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="cright">
+    <div class="bd"> 
+      <!--百度地图容器-->
+      <div style="width:743px;height:792px;border:#ccc solid 1px;" id="dituContent"></div>
+      <script type="text/javascript">
+            //创建和初始化地图函数：
+            function initMap(){
+                createMap();//创建地图
+                setMapEvent();//设置地图事件
+                addMapControl();//向地图添加控件
+                addMarker();//向地图中添加marker
+            }
+            
+            //创建地图函数：
+            function createMap(){
+                var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                var point = new BMap.Point(116.524594,39.807008);//定义一个中心点坐标
+                map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+                window.map = map;//将map变量存储在全局
+            }
+            
+            //地图事件设置函数：
+            function setMapEvent(){
+                map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                map.enableKeyboard();//启用键盘上下左右键移动地图
+            }
+            
+            //地图控件添加函数：
+            function addMapControl(){
+                //向地图中添加缩放控件
+            var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+            map.addControl(ctrl_nav);
+                //向地图中添加缩略图控件
+            var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+            map.addControl(ctrl_ove);
+                //向地图中添加比例尺控件
+            var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+            map.addControl(ctrl_sca);
+            }
+            
+            //标注点数组
+            var markerArr = [{title:"北京市亦庄经济技术开发区中和街&nbsp;16号",content:"北京市亦庄经济技术开发区中和街<br/>16号",point:"116.524522|39.807729",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+                 ];
+            //创建marker
+            function addMarker(){
+                for(var i=0;i<markerArr.length;i++){
+                    var json = markerArr[i];
+                    var p0 = json.point.split("|")[0];
+                    var p1 = json.point.split("|")[1];
+                    var point = new BMap.Point(p0,p1);
+                    var iconImg = createIcon(json.icon);
+                    var marker = new BMap.Marker(point,{icon:iconImg});
+                    var iw = createInfoWindow(i);
+                    var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+                    marker.setLabel(label);
+                    map.addOverlay(marker);
+                    label.setStyle({
+                                borderColor:"#808080",
+                                color:"#333",
+                                cursor:"pointer"
+                    });
+                    
+                    (function(){
+                        var index = i;
+                        var _iw = createInfoWindow(i);
+                        var _marker = marker;
+                        _marker.addEventListener("click",function(){
+                            this.openInfoWindow(_iw);
+                        });
+                        _iw.addEventListener("open",function(){
+                            _marker.getLabel().hide();
+                        })
+                        _iw.addEventListener("close",function(){
+                            _marker.getLabel().show();
+                        })
+                        label.addEventListener("click",function(){
+                            _marker.openInfoWindow(_iw);
+                        })
+                        if(!!json.isOpen){
+                            label.hide();
+                            _marker.openInfoWindow(_iw);
+                        }
+                    })()
+                }
+            }
+            //创建InfoWindow
+            function createInfoWindow(i){
+                var json = markerArr[i];
+                var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+                return iw;
+            }
+            //创建一个Icon
+            function createIcon(json){
+                var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+                return icon;
+            }
+            
+            initMap();//创建和初始化地图
+        </script> 
+    </div>
+  </div>
+</div>
+<!--选择门店--> 
+
+<!--安装说明-->
+<div id="explain" class="explain">
+  <h2>安装费详细说明</h2>
+  <span class="closebtn"></span>
+  <div class="explain_content">
+    <table>
+      <tbody>
+        <tr>
+          <th>服务项目</th>
+          <th>配件名称</th>
+          <th>服务标准</th>
+          <th>收费标准</th>
+          <th>备注</th>
+        </tr>
+        <tr>
+          <td>空调管路清洗</td>
+          <td>空调管路清洗剂</td>
+          <td>副驾位空调滤车型，需拆装手套箱等附件；本项目含电器防潮保护，清洗空调风道及蒸发箱；</td>
+          <td>¥30.00</td>
+          <td>[主驾位空调滤车型]，需拆装油门踏板等附件，需补门店20元/只差价；[外置式空调滤车型]，需拆装前挡玻璃流水槽等附件，需补门店20元/只差价；</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!--安装说明-->
+</body>
+</html>

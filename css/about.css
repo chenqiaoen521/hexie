@@ -1,0 +1,43 @@
+/* CSS Document */
+/*和谐汽车*/
+.main{}
+	.guide{ line-height:30px; color:#555555; font-size:14px; clear:both;}
+	.guide a{ color:#555555;}
+	.guide a:hover{ text-decoration:underline;color:#bc0000;}
+	.sub{ overflow:hidden; margin:10px 0;}
+		.sub_nav{ float:left; border-top:#bf9d5b 5px solid;}
+		.sub_nav h3{ font-size:20px; line-height:68px; font-weight:bold;border:#dcdcdc 1px solid; border-bottom:none;padding-left:40px;color:#555555;}
+		.sub_nav ul{width:215px; border:#dcdcdc 1px solid;}
+		.sub_nav ul li a{ display:block; line-height:48px; font-size:16px; padding-left:40px; color:#666666;}
+		.sub_nav .sub_cur{ color:#FFF; background-color:#b4862c;}
+		.text{ overflow:hidden; float:right; width:960px;}
+		.text h3{ font-size:24px; line-height:50px; color:#b4862c; background:url(../images/abouabout_text_icon.png) no-repeat left center; padding-left:20px;}
+		.text p{ color:#323232; font-size:14px; line-height:36px;}
+		.text i{ color:#b4862c;}
+/*和谐汽车*/
+
+/*和谐团队*/
+.text ul{ overflow:hidden; width:980px;}
+.text ul li{ float:left; margin-bottom:10px; margin-right:22px;}
+.text .tp{ overflow:hidden;}
+.text .tp a{ display:block;overflow:hidden;width:458px; height:305px; border:#c2a263 2px solid;padding:3px; }
+.text ul li img{ width:100%; height:100%;}
+.text ul li a:hover{border:#565656 2px solid; transition:all 0.2s linear;}
+.text ul li p{ text-align:center; color:#565656;}
+/*和谐团队*/
+
+/*和谐新闻*/
+.about_news{ overflow:hidden; float:right; width:960px; min-height:400px;}
+.about_news ul{ overflow:hidden;}
+.about_news ul li{ display:block; border:#FFF 1px solid;border-right:none; border-left:none;line-height:46px; font-size:14px; overflow:hidden;}
+.about_news ul li:hover{ border:#b4862c 1px dashed; border-right:none; border-left:none; transition:all 0.2s linear;}
+.about_news ul li:hover a{color:#b4862c; transition:all 0.2s linear; background:url(../images/about_icon1_hov.png) no-repeat left center;}
+.about_news ul li:hover span{color:#b4862c; transition:all 0.2s linear;}
+.about_news ul li a{ color:#323232; float:left; display:block; overflow:hidden;width:750px; white-space:nowrap; text-overflow:ellipsis; background:url(../images/about_icon1.png) no-repeat left center; padding-left:20px}
+.about_news ul li span{ float:right; overflow:hidden; color:#949494;}
+/*和谐新闻*/
+
+/*和谐新闻详情页面*/
+.about_news h4{ color:#949494; font-size:24px; padding-bottom:30px; text-align:center;}
+.about_news p{ color:#949494; line-height:36px; font-size:14px;}
+.about_news img{ max-width:960px; margin:0 auto; padding:20px 0;}

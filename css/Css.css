@@ -1,0 +1,12 @@
+/* Reset system css */
+
+.Pagination{float: right;height: 55px;_height: 45px; line-height: 20px; color: #565656;margin-top:40px;_margin-top: 20px; clear:both; padding-right:58px;}
+.Pagination span{margin-right: 5px;display: block;float: left;margin-left: 5px;}
+.Pagination span b{padding: 0 2px;}
+.Pagination div {float:left}
+.Pagination a{ font-size: 12px;text-decoration: none;display: block;float: left;color: #565656;border: 1px solid #cacaca;height:26px;line-height:26px;padding: 0 10px;margin: 0 5px;}
+.Pagination .Ellipsis {line-height: 32px;overflow: hidden; display:none;}
+cite.FormNum{display: block;float: left;line-height: 20px;height: 20px; font-style:  normal; padding-left:10px;}
+#PageNum{ color:#777;width: 30px;height: 20px;line-height: 20px; border: 1px solid #cacaca; margin:0 5px; text-align:center;}
+.Pagination a:hover{border: 1px solid #b4862c; transition:all 0.1s linear;}
+.Pagination a.PageCur{background-color: #b4862c; color:#FFF; border:#b4862c 1px solid;}

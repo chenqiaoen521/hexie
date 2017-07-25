@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+.weizhi{ width:1200px; font-size:12px; color:#666666; line-height:30px;clear:both;}
+.weizhi a{ color:#666666;}
+.weizhi a:hover{ color:#bc0000; text-decoration:underline;}
+.area{ width:1168px; padding:0 15px; margin-top:30px; height:54px; line-height:54px; background-color:#f0f0f0; border:1px solid #cbc9c9; border-bottom:none;}
+.area span{ font-size:16px; color:#666; background:url(../images/store.png) no-repeat left center; padding-left:30px; height:54px; line-height:54px; display:inline-block;}
+.area select{ display:inline-block; width:130px;  height:32px; line-height:32px; background-color:#fff; border:1px solid #dddddd; margin-right:20px;}
+.cleft{ float:left; width:453px; border:1px solid #ddd;}
+.cright{ float:left; width:743px; border:1px solid #ddd; overflow:hidden; margin-bottom:40px;}
+.fenlei{ overflow:hidden; width:433px;  padding:20px 10px; border-bottom:1px solid #dddddd;}
+.fenlei a{ float:left; display:block; font-size:16px; color:#666; background-color:#fff; border:1px solid #dddddd; width:88px; height:28px; text-align:center; line-height:30px; cursor:pointer;}
+.fenlei a.on{ color:#fff; background-color:#bf0000; border:1px solid #bf0000;}
+.fenlei p{ float:right; font-size:16px; color:#666;}
+.fenlei p span{ color:#d60000;}
+.dian{ width:453px;  height:723px; overflow-y:auto;}
+.dian ul li{ padding:10px; border-bottom:1px solid #dddddd;}
+.dian ul li:hover{ background-color:#f6f6f6; cursor:pointer;}
+.dian ul li h3{ color:#bf9d5b; margin-bottom:20px; font-size:16px;}
+.dian ul li h3 a{ color:#bf9d5b;}
+.dian ul li .store{ overflow:hidden;}
+.dian ul li .store img{ float:left; display:block; width:120px; height:102px;}
+.dian ul li .store .contact{ float:left; width:252px; margin-left:20px;}
+.dian ul li .store .contact .telnum{ color:#bf0000; font-size:16px; margin-bottom:5px;}
+.dian ul li .store .contact .address{ color:#666666; font-size:14px; line-height:24px;}
+.dian ul li .store .contact .yuyue{ display:inline-block; padding:5px 10px; font-size:14px; color:#fff; background-color:#bf0000; margin-top:10px;}
+.dian ul li .store .contact .send{ display:inline-block; padding:5px 10px; font-size:14px; color:#bf0000; border:1px solid #bf0000; margin-top:10px;}
+.dian ul li .store .contact .send:hover{ background-color:#bf0000; color:#fff;}
+/*预约弹窗开始*/
+#yuyue{ width:500px;position:relative; background-color:#fff; padding-bottom:20px; display:none;}
+#yuyue .closebtn{position:absolute; right:22px; top:24px; display:block; width:16px; height:16px; background:url(../images/closebtn.png) no-repeat; cursor:pointer;}
+#yuyue .closebtn:hover{ background:url(../images/closebtn1.png) no-repeat;}
+#yuyue h3{ font-size:18px; color:#bf9d5b; text-align:center; margin:20px 0; margin-bottom:40px;}
+#yuyue .row{ margin-left:60px;overflow:hidden; margin-bottom:16px;}
+#yuyue .row span{ float:left; text-align:right; width:100px; font-size:14px; color:#666666; line-height:34px;}
+#yuyue .row span>img{ padding-top:16px;overflow:hidden; display:inline-block; padding-right:5px;}
+#yuyue .row p{ float:left;font-size:14px; color:#666666; line-height:34px;}
+#yuyue .row input{ float:left; height:32px; padding:0 5px; line-height:32px; border:1px solid #ddd; width:250px;}
+#yuyue .row textarea{ float:left; height:92px; padding:0 5px;  line-height:32px; border:1px solid #ddd; width:250px;}
+#yuyue button{ display:block; width:158px; height:32px; background-color:#bf9d5b; line-height:32px; border-radius:16px; text-align:center; color:#fff; border:1px solid #bf9d5b; margin:10px auto;}
+#yuyue button:focus{ outline:none;}
+#yuyue button:hover{ background-color:#fff; color:#bf9d5b;}
+/*预约弹窗结束*/
+
+/*发送到手机开始*/
+#send{ width:500px;position:relative; background-color:#fff;padding:60px 0; display:none;}
+#send .closebtn{position:absolute; right:22px; top:24px; display:block; width:16px; height:16px; background:url(../images/closebtn.png) no-repeat; cursor:pointer;}
+#send .closebtn:hover{ background:url(../images/closebtn1.png) no-repeat;}
+#send .row{overflow:hidden; margin-bottom:30px;}
+#send .row span{ float:left; text-align:right; width:100px; font-size:14px; color:#666666; line-height:34px;}
+#send .row input{ float:left; height:32px; padding:0 5px; line-height:32px; border:1px solid #ddd; width:110px;}
+#send .row img{ float:left; margin:0 30px; width:80px; height:32px;}
+#send .row a{ font-size:12px; color:#345d83; line-height:32px;}
+#send .button{ margin-left:100px; display:inline-block; width:90px; height:28px; line-height:28px; text-align:center; background-color:#bf0000; color:#fff; font-size:14px;}
+#send button{ margin-left:20px; display:inline-block; width:90px; height:28px; line-height:28px; text-align:center;color:#345d83; background-color:transparent; font-size:14px; border:1px solid #cecccd;}
+#send button:hover{ opacity:0.8; cursor:pointer;}
+/*发送到手机结束*/

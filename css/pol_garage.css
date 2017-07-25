@@ -1,0 +1,32 @@
+/* CSS Document */
+.text{ border:#dddddd 1px solid; float:right; overflow:hidden; width:890px; min-height:600px; padding:30px;}
+.text h4{ color:#323232; font-size:18px; padding-bottom:20px;}
+.text ul{ overflow:hidden;}
+.text ul>p{ color:#FFF; font-size:16px; padding:0;background-color:#bf9d5b; width:260px; line-height:38px; height:38px; text-align:center; cursor:pointer; margin:20px 0;}
+.text ul>p:hover{ transition:all 0.1s linear;background-color:#bf895b;}
+.text ul li{ padding:10px 0; overflow:hidden; border:#e8e8e8 1px solid; border-top:none;}
+.text ul li span{float:left; overflow:hidden;width:148px; text-align:center; color:#666666;}
+.text ul li span>img{ width:72px; height:72px; margin:0 auto;}
+.text ul li span>a{ display:inline-block; padding:0 5px;text-align:center; color:#b2b2b2;}
+.text ul li span>a:hover{color:#bf9d5b; text-decoration:underline;}
+	.bt{ overflow:hidden; border:#e8e8e8 1px solid; line-height:33px; color:#666666; font-size:12px; background-color:#f2f2f2;}
+	.bt p{ float:left; overflow:hidden; width:148px; text-align:center;}
+	
+	
+/*新增车型页面详情*/
+.box{ overflow:hidden; padding:20px;}
+	.box_img{ float:left; overflow:hidden; width:180px; height:180px; /*border:#969696 1px solid; */margin-right:80px;}
+	.box_img img{ width:100%; height:100%;}
+	.box_list{overflow:hidden;}
+	.box_list form{ padding-left:50px;}
+	.box_list p{ position:relative;overflow:hidden; padding:5px 0}
+	.box_list p label{ line-height:36px;float:left; width:140px; text-align:right; margin-right:10px; font-size:14px; color:#3d3d3d;}
+	.box_list p a{ width:90px; height:24px; line-height:23px; margin-top:7px;text-align:center; display:inline-block; border-radius:3px; margin-left:10px;color:#FFF; font-size:14px; background-color:#bf0000;}
+	.box_list p a:hover{ background-color:#e86a6a; transition:all 0.1s linear;}
+	.box_list p input{ padding:5px; float:left; border:#cccccc 1px solid; width:220px;font-size:14px; line-height:26px; height:26px;border-radius:4px;}
+	.box_list select{padding:5px; float:left; border:#cccccc 1px solid; width:135px; margin-right:5px;font-size:14px; line-height:26px;border-radius:4px; height:36px;}
+	.box_list p i{ display:inline-block; padding-left:10px; line-height:36px; color:#3d3d3d; font-size:14px;}
+	.box_list .btn{margin-left:150px;color:#FFF; font-size:16px; background-color:#bf9d5b; border-radius:4px;width:230px; height:36px;text-align:center; border:none !important; cursor:pointer;}
+	.box_list .btn:hover{ background-color:#bf895b; transition:all 0.1s linear;}
+
+/*新增车型页面详情*/

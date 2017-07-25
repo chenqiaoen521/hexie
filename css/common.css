@@ -1,0 +1,41 @@
+/* CSS Document */
+.main{}
+	.guide{line-height:30px; color:#555555; font-size:14px; clear:both;}
+	.guide a{color:#555555;}
+	.guide a:hover{ text-decoration:underline;color:#bc0000;}
+	.sub{ overflow:hidden; margin:20px 0;}
+	.sub_list .ggw{ overflow:hidden;}
+	.sub_list .ggw a{ width:838px; height:190px; border:#cccccc 1px solid; display:block; overflow:hidden;}
+	.sub_list .ggw a img{max-height:200px;width:840px;}
+	.sub_list{ float:left; overflow:hidden;width:840px;}
+	.sub_list ul{ margin-top:20px; overflow:hidden;}
+	.sub_list ul li{ display:block; padding:5px 0; overflow:hidden; border-bottom:#FFF 1px dashed; border-top:#FFF 1px dashed;}
+	.sub_list ul li:hover{ border-bottom:#bf9d5b 1px dashed;border-top:#bf9d5b 1px dashed;}
+	.sub_list ul li a{ float:left; overflow:hidden; color:#292929; font-size:14px; width:600px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+	.sub_list ul li:hover a{color:#bf9d5b;}
+	.sub_list ul li:hover span{color:#bf9d5b;}
+	.sub_list ul li span{ float:right; overflow:hidden;color:#a1a1a1; font-size:14px;}
+	
+	.sub_goods{ float:right; overflow:hidden;}
+	.sub_goods li{ margin-bottom:20px;display:block;border:1px solid #e9e9e9; width:300px; height:170px; overflow:hidden; position:relative; background-color:#fff;}
+	.sub_goods li img{ display:block; width:100%; height:170px;transition: .3s;-moz-transition: .3s;-webkit-transition: .3s;-o-transition: .3s; margin-left:0px;}
+	.sub_goods li:hover img{margin-left:6px;}
+	.sub_goods li .text{ position:absolute; left:20px; top:30px;}
+	.sub_goods li .text p{ font-size:18px; color:#1a1a1a; line-height:28px;}
+	.sub_goods li .text p a{color:#1a1a1a;}
+	.sub_goods li .text p a:hover{ text-decoration:underline;}
+	.sub_goods li .text p.small{ font-size:20px; color:#fd0004;}
+	.sub_goods li .text p.small b{ font-size:14px; padding:0 5px;color:#fd0004;font-weight:normal;}
+	.sub_goods li .text p.en{font-family:Arial;}
+	.sub_goods li .text p i{ font-size:12px; margin-left:20px; font-style:normal;}
+
+
+/*详情页面*/
+.list{ overflow:hidden; padding:0 20px; margin:0 auto; float:left; width:840px;}
+.list h3{ display:block;color:#292929; font-size:24px; padding:10px 0; text-align:center;display:block; border-bottom:#cccccc 1px solid;}
+.fenxiang{ margin:10px auto; padding:0 20px;overflow:hidden;}
+.fenxiang i{ float:left; font-size:18px; color:#292929;}
+.fenxiang .bdsharebuttonbox{ float:right; font-size:12px; color:#292929; line-height:30px;}
+.fenxiang .bdsharebuttonbox p{ float:left; font-size:12px; color:#292929;}
+.list .zi{ font-size:16px; line-height:32px; text-align:justify;}
+/*详情页面*/

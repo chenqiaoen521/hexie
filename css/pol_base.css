@@ -1,0 +1,17 @@
+/* CSS Document */
+
+.main{}
+	.guide{line-height:30px; color:#555555; font-size:14px; clear:both;}
+	.guide a{color:#555555;}
+	.guide a:hover{ text-decoration:underline;color:#bc0000;}
+	.sub{ overflow:hidden; margin-top:10px; width:1200px; margin-bottom:40px;}
+		.sub_nav{ float:left; overflow:hidden; width:220px;}
+		.sub_nav h3{ font-size:18px; padding-left:40px;line-height:44px; background-color:#f2f2f2; color:#3d3d3d;}
+		.sub_nav ul{}
+		.sub_nav ul li{ background:url(../images/pol_icon.png) no-repeat bottom center; display:block; overflow:hidden;}
+		.sub_nav ul li a{ display:block; line-height:48px; color:#b2b2b2; font-size:16px; margin-left:60px; padding-left:15px;}
+		.sub_nav ul li a:hover{/*color:#FFF;background-color:#bf9d5b; */ background:url(../images/pol_icon2.png) no-repeat left center; transition:all 0.2s linear; color:#b4862c;}
+		.sub_nav .sub_curr{/*color:#FFF;background-color:#bf9d5b; */ background:url(../images/pol_icon2.png) no-repeat left center; transition:all 0.1s linear; color:#b4862c;}
+		.sub_nav .curr{ background-color:#bf9d5b; color:#FFF;border:#bf9d5b 1px solid;}
+
+

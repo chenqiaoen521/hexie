@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+.weizhi{ width:1200px; font-size:14px; color:#666666; padding:10px 0; /*border-bottom:1px solid #dddddd;*/ }
+.weizhi a{ color:#666666;}
+.weizhi a:hover{ color:#c40000; text-decoration:underline;}
+.main{ overflow:hidden;}
+.cleft{ float:left; width:830px;}
+.cltop{ overflow:hidden;}
+.cltop img{ display:block;float:left; width:436px; height:234px;}
+.cltop .text{ float:left; margin-left:20px; width:370px;}
+.cltop .text h3{ font-size:18px; color:#000; padding-bottom:5px; border-bottom:1px dashed #333; font-weight:bold; margin-bottom:10px;}
+.cltop .text p{ line-height:24px; color:#000;}
+.cltop .text p span{ color:#888;}
+.text .yuyue{ display:inline-block; padding:5px 10px; font-size:14px; color:#fff; margin-right:20px; background-color:#bf0000; margin-top:10px; cursor:pointer;}
+.text .send{ display:inline-block; padding:5px 10px; font-size:14px; color:#bf0000; border:1px solid #bf0000; margin-top:10px; cursor:pointer;}
+.text .send:hover{ background-color:#bf0000; color:#fff;}
+.cltext{ margin-top:20px;}
+.cltext h4{ font-weight:bold; font-size:16px; color:#333; line-height:30px;}
+.cltext p{ line-height:24px; font-size:14px; color:#333;}
+.clxq{ padding-bottom:100px;}
+.tit{ margin-top:20px;}
+.clxq>img{ width:736px; margin:0 auto;}
+
+.cright{ float:right; width:355px;}
+/*预约弹窗开始*/
+#yuyue{ width:500px;position:relative; background-color:#fff; padding-bottom:20px; display:none;}
+#yuyue .closebtn{position:absolute; right:22px; top:24px; display:block; width:16px; height:16px; background:url(../images/closebtn.png) no-repeat; cursor:pointer;}
+#yuyue .closebtn:hover{ background:url(../images/closebtn1.png) no-repeat;}
+#yuyue h3{ font-size:18px; color:#bf9d5b; text-align:center; margin:20px 0; margin-bottom:40px;}
+#yuyue .row{ margin-left:60px;overflow:hidden; margin-bottom:16px;}
+#yuyue .row span{ float:left; text-align:right; width:100px; font-size:14px; color:#666666; line-height:34px;}
+#yuyue .row span>img{ padding-top:16px;overflow:hidden; display:inline-block; padding-right:5px;}
+#yuyue .row p{ float:left;font-size:14px; color:#666666; line-height:34px;}
+#yuyue .row input{ float:left; height:32px; padding:0 5px; line-height:32px; border:1px solid #ddd; width:250px;}
+#yuyue .row textarea{ float:left; height:92px; padding:0 5px;  line-height:32px; border:1px solid #ddd; width:250px;}
+#yuyue button{ display:block; width:158px; height:32px; background-color:#bf9d5b; line-height:32px; border-radius:16px; text-align:center; color:#fff; border:1px solid #bf9d5b; margin:10px auto;}
+#yuyue button:focus{ outline:none;}
+#yuyue button:hover{ background-color:#fff; color:#bf9d5b;}
+/*预约弹窗结束*/
+
+/*发送到手机开始*/
+#send{ width:500px;position:relative; background-color:#fff;padding:60px 0; display:none;}
+#send .closebtn{position:absolute; right:22px; top:24px; display:block; width:16px; height:16px; background:url(../images/closebtn.png) no-repeat; cursor:pointer;}
+#send .closebtn:hover{ background:url(../images/closebtn1.png) no-repeat;}
+#send .row{overflow:hidden; margin-bottom:30px;}
+#send .row span{ float:left; text-align:right; width:100px; font-size:14px; color:#666666; line-height:34px;}
+#send .row input{ float:left; height:32px; padding:0 5px; line-height:32px; border:1px solid #ddd; width:110px;}
+#send .row img{ float:left; margin:0 30px; width:80px; height:32px;}
+#send .row a{ font-size:12px; color:#345d83; line-height:32px;}
+#send .button{ margin-left:100px; display:inline-block; width:90px; height:28px; line-height:28px; text-align:center; background-color:#bf0000; color:#fff; font-size:14px;}
+#send button{ margin-left:20px; display:inline-block; width:90px; height:28px; line-height:28px; text-align:center;color:#345d83; background-color:transparent; font-size:14px; border:1px solid #cecccd;}
+#send button:hover{ opacity:0.8; cursor:pointer;}
+/*发送到手机结束*/

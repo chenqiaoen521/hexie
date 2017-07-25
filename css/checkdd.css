@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background-color:#f0f0f0;}
+.topheader1{ background-color:#fff; width:100%;height:40px;}
+.toplogo .container{ overflow:hidden;}
+.toplogo{ border-bottom:1px solid #e6e6e6; padding-bottom:30px;}
+.buzhou{ float:right; margin-top:20px;}
+.buzhou img{ display:block; width:600px; height:52px;}
+.quanbu{ border-top:4px solid #bf9d5b; background-color:#fff; padding:0 20px;}
+
+.tit{ height:24px; line-height:24px; border-left:4px solid #bf0000; font-size:16px; color:#333; padding-left:12px; margin:20px 0}
+.block{ border-bottom:2px solid #ddd; padding-bottom:20px;}
+.xinxibox{ margin-top:20px; overflow:hidden; margin-bottom:10px;}
+.already{ float:left; margin-right:20px; border:#dddddd 2px dashed; width:230px; padding:28px;position:relative;}
+.infor1 { overflow:hidden; font-size:12px; color:#666;width:230px; margin:0 auto;}
+.infor1 .name{ float:left; background:url(../images/check_10.png) no-repeat left 0; padding-left:25px;}
+.infor1 .tel{ float:right; background:url(../images/check_13.png) no-repeat left 2px; padding-left:25px;margin:0 !important;}
+.infor2{ font-size:12px; color:#333; margin-top:10px; width:160px;}
+.infor3{ font-size:12px; color:#666; margin-top:10px; width:160px;}
+.default{ position:absolute; right:20px; bottom:20px; display:block; width:60px; height:20px; line-height:20px; text-align:center; background-color:#bf0000; color:#fff; font-size:12px;}
+.newadress{ float:left;font-size:14px; color:#666; background:url(../images/check_19.png) no-repeat left center; width:120px; height:40px; padding-left:60px; line-height:40px;/* margin-top:49px; */cursor:pointer; margin-right:20px;}
+.fillin{ float:left; display:none;}
+.con{ overflow:hidden; margin-bottom:5px;}
+.con .t1 { color: #333; display:inline-block; float:left;font-size:12px;line-height:30px;margin-right:3px;text-align:right;width:100px;}
+.red {color:red;}
+.btn{ width:70px; height:30px; line-height:30px; text-align:center; margin-left:103px; background:#bf0000; font-size:14px; color:#fff; cursor:pointer;}
+.con input[type="text"] {float:left;border:1px solid #d9d9d9;color:#333;height:28px;line-height:28px; padding: 0 10px; width: 140px;}
+.fillin .pay_youhui {background-color:#fffaf9;border:1px dashed #f4825b;color:#999;display:inline-block;font-size: 12px;height:26px;line-height:26px;margin-left:31px;padding:0 10px;}
+.fillin .pay_youhui a {color:#d12a3e;margin-left:0;}
+.con select.dizhi{ width:110px; margin:0;float:left;border:1px solid #d9d9d9;color:#333;height:30px;line-height:30px; margin-right:10px;}
+.con textarea{float: left;border: 1px solid #d9d9d9;color: #333;height: 28px;line-height: 28px; padding:0 5px; width:200px;}
+
+.shangpinqd .sptit{height:40px; line-height:40px; font-size:16px; color:#333; background-color:#f0f0f0; margin-bottom:10px; text-align:center; overflow:hidden;}
+.shangpinqd .sptit li{ width:175px; text-align:center; float:left;}
+.shangpinqd .sptit li:first-child{ text-align:left; padding-left:15px; width:620px;}
+.shangpinqd .piece{ height:35px; line-height:35px; font-size:12px; color:#666; background-color:#f9f9f9; margin-bottom:6px;width:100%;overflow:hidden;}
+.shangpinqd .piece li{ width:175px; text-align:center; float:left;}
+.shangpinqd .piece li p{ width:620px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.shangpinqd .piece li:first-child{ text-align:left; padding-left:15px; width:620px;}
+
+.anzhuangfei .sptit{height:40px; line-height:40px; font-size:16px; color:#333; background-color:#f0f0f0; margin-bottom:10px;overflow:hidden;}
+.anzhuangfei .sptit li{float:left;}
+.anzhuangfei .piece{font-size:12px; color:#666;margin-bottom:6px; border-bottom:1px solid #ddd; padding-bottom:10px;width:100%;overflow:hidden;}
+.anzhuangfei .piece li{float:left;}
+.anzhuangfei .piece li p{ line-height:24px; font-size:12px; color:#333;}
+.anzhuangfei li.fwxm{padding-left:20px; width:230px;}
+.anzhuangfei li.fwbz{ width:320px; margin-right:100px;}
+.anzhuangfei li.sfbz{width:180px;}
+.anzhuangfei li.bz{width:260px; padding-right:50px;}
+.zhifu{ border-bottom:none;}
+.zhifu input[type="radio"] { margin: 3px 3px 0px 5px; display: none;}
+.zhifu label { padding-left: 20px; cursor: pointer; border:1px solid #ddd; height:30px;}
+.zhifu label.checked {border:1px solid #bf0000;}
+
+.row{ overflow:hidden; height:34px; margin-bottom:20px;}
+.row .rleft{ float:left; width:130px; font-size:16px; color:#333; text-align:right; line-height:34px;}
+.row .rright{ float:left; margin-left:15px;}
+.row .rright p{ font-size:14px; color:#666; line-height:32px;}
+.row .rright textarea{ font-size:14px; color:#666; line-height:32px; padding:0 5px; height:32px; border:1px solid #ddd; width:335px; resize:none;}
+.row .rright label{font-size:12px; color:#666; line-height:32px; height:32px; padding:0 20px; display:block; float:left; margin-right:20px;}
+.row .rright label span img{ vertical-align:middle; margin-right:10px; margin-top:-1px; display:inline-block !important;}
+
+.jisuan{ background-color:#f0f0f0; border-bottom:2px solid #ddd;  border-top:2px solid #ddd; padding:15px 0; background-color:#FFF;}
+.row1{ overflow:hidden; line-height:30px;}
+.row1 p{ float:right; text-align:right; font-size:14px; color:#333;}
+.row1 p a{ color:#0089f4;}
+.row1 p img{ margin:0 5px;display: inline-block;}
+.row1 span{ float:right; text-align:left; width:140px; padding-left:20px; color:#bf0000;}
+.row1.small{ font-size:12px;}
+.row1.big{ font-size:20px; font-weight:bold;}
+.tijiao{ overflow:hidden;margin:20px 0;}
+.tijiao a{ display:block; float:right; width:240px; height:60px; line-height:60px; font-size:30px; text-align:center; color:#fff; background-color:#bf0000;}
+
+.check_sel {color: #333;font-size: 12px;height: 35px; margin-bottom:20px;}
+.sel_title {color: #333;display: inline-block;float: left;font-size: 12px;height: 35px;line-height: 35px;margin-right: 10px;text-align: right;width: 100px;}
+.sel_title i{ margin-right:5px; font-style:normal;}
+.qiehuan{ float:left; overflow:hidden;}
+.check_sel .radioRef {border: 2px solid #ebebeb;cursor: pointer;display: inline-block;float: left;height: 31px;line-height: 31px;margin-right: 10px;text-align: center;width: 126px;}
+.check_sel .radioRef.checked {border:2px solid #d33447;}
+.red{ color:red;}
+.check_sel ul li{ display:block;}
+
+.storebox{ height:30px; line-height:30px; color:#fff; padding:0 20px; font-size:14px; background-color:#bf0000; display:inline-block; float:left;}
+.check_sel input{border: 1px solid #ebebeb;cursor: pointer;display: inline-block;float: left;height: 31px;line-height: 31px;margin-right: 10px;text-align: center;width: 126px;}
+.check_sel p{ float:left; color:#bf0000; font-size:14px; line-height:32px;}
+.check_sel select{border: 1px solid #ebebeb;cursor: pointer;display: inline-block;float: left;height: 31px;line-height: 31px;margin-right: 10px;text-align: center;width: 126px;}
+
+/*选择门店*/
+#storebox{ width:1200px; overflow:hidden; display:none;}
+#storebox .closebtn{position:absolute; right:42px; top:24px; display:block; width:16px; height:16px; background:url(../images/closebtn.png) no-repeat #fff; cursor:pointer; z-index:999;}
+.cleft{ float:left; width:453px; border:1px solid #ddd; background-color:#fff;}
+.cleft select{ display:inline-block; width:130px; padding:0 10px; height:32px; line-height:32px; background-color:#fff; border:1px solid #dddddd; margin-right:20px;}
+.cright{ float:left; width:743px; border:1px solid #ddd; overflow:hidden; background-color:#fff;}
+.fenlei{ overflow:hidden; width:433px;  padding:20px 10px; border-bottom:1px solid #dddddd;}
+.fenlei a{ float:left; display:block; font-size:16px; color:#666; background-color:#fff; border:1px solid #dddddd; width:88px; height:28px; text-align:center; line-height:30px; cursor:pointer;}
+.fenlei a.on{ color:#fff; background-color:#bf0000; border:1px solid #bf0000;}
+.fenlei p{ float:right; font-size:16px; color:#666;}
+.fenlei p span{ color:#d60000;}
+.dian{ width:453px;  height:722px; overflow-y:auto;}
+.dian ul li{ padding:10px; border-bottom:1px solid #dddddd;}
+.dian ul li:hover{ background-color:#f6f6f6; cursor:pointer;}
+.dian ul li h3{ color:#bf9d5b; margin-bottom:20px;}
+.dian ul li .store{ overflow:hidden;}
+.dian ul li .store img{ float:left; display:block; width:120px; height:102px;}
+.dian ul li .store .contact{ float:left; width:252px; margin-left:20px;}
+.dian ul li .store .contact .telnum{ color:#bf0000; font-size:16px; margin-bottom:5px;}
+.dian ul li .store .contact .address{ color:#666666; font-size:14px; line-height:24px;}
+.dian ul li .store .contact .yuyue{ display:inline-block; padding:5px 10px; font-size:14px; color:#fff; background-color:#bf0000; margin-top:10px;}
+
+

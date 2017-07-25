@@ -1,0 +1,1143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>和谐修车网</title>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/baoyangxm.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" media="screen" />
+<script src="js/jquery-1.9.1.min.js" type="text/jscript"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js" type="text/jscript"></script>
+<script src="js/topbase.js" type="text/jscript"></script>
+<script src="js/jquery.leanModal.min.js" type="text/javascript"></script>
+<script src="js/PCASClass.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script src="js/baoyangxm.js" type="text/javascript"></script>
+<script>
+$(function(){
+	$("a[rel*=leanModal]").leanModal({closeButton:".closebtn"});
+ })
+</script>
+</head>
+
+<body>
+<!--top-->
+<div class="topheader">
+<div class="container">
+	<div class="topleft">
+        <a rel="leanModal" href="#selectcity"><img src="images/indexb_03.png">郑州</a>
+        <span>全国300家门店连锁服务</span>
+    </div>
+    <div class="cartype topmid">
+    	<img src="images/indexb_14.png" alt="">
+        <p>请先<a rel="leanModal" href="#lovecar">选择车型</a></p>
+    </div>
+    <div class="topright">
+    	<a style="color:#c20000;" rel="leanModal" href="#loginbox">登录</a>|
+        <a rel="leanModal" href="#registerbox">注册</a>|
+        <a href="pol_order.html" target="_blank">我的订单</a>|
+        <a href="shoppingcart.html" target="_blank">购物车（<i>0</i>）</a>|
+        <a href="pol_information.html" target="_blank">用户中心</a>
+    </div>
+</div>
+</div>
+<div class="toplogo">
+<div class="containertop">
+	<div class="logobox">
+        <a href="index.html"><img src="images/indexb_10.png" alt="" class="logo"></a>
+        <p>[股票代码：03836.HK]</p>
+    </div>
+    <!--nav-->
+    <div class="navbox">
+      <ul class="nav">
+        <li><a href="index.html" target="_blank">首页</a></li>
+        <li><a href="chaxun.html" target="_blank">保养</a>
+          <ul class="dropnav">
+            <li><a href="chaxun.html" target="_blank">保养查询</a></li>
+            <li><a href="baoyangtc.html" target="_blank">保养套餐</a></li>
+          </ul>
+        </li>
+        <li><a href="mai_service.html" target="_blank">维修</a>
+          <ul class="dropnav">
+            <li><a href="mai_introduce.html" target="_blank">服务介绍</a></li>
+            <li><a href="mai_star.html" target="_blank">明星技师</a></li>
+            <li><a href="mai_plan.html" target="_blank">进度查询</a></li>
+            <li><a href="mai_service.html" target="_blank">维修记录</a></li>
+          </ul>
+        </li>
+        <li><a href="rel_introduce.html" target="_blank">保险救援</a>
+          <ul class="dropnav">
+            <li><a href="rel_introduce.html" target="_blank">服务介绍</a></li>
+            <li><a href="rel_calculate.html" target="_blank">车险计算</a></li>
+            <li><a href="rel_claims.html" target="_blank">车险理赔</a></li>
+            <li><a href="rel_service.html" target="_blank">救援服务</a></li>
+          </ul>
+        </li>
+        <li><a href="store.html" target="_blank">服务门店</a></li>
+        <li><a href="club.html" target="_blank">会员俱乐部</a>
+          <ul class="dropnav">
+            <li><a href="club.html" target="_blank">会员中心</a></li>
+            <li><a href="club_service.html" target="_blank">会员服务</a></li>
+            <li><a href="club_polite.html" target="_blank">推荐有礼</a></li>
+            <li><a href="club_activity.html" target="_blank">会员活动</a></li>
+          </ul>
+        </li>
+        <li><a href="" target="_blank">新车二手车</a></li>
+        <li><a href="about.html" target="_blank">关于我们</a>
+          <ul class="dropnav">
+            <li><a href="about.html" target="_blank">和谐汽车</a></li>
+            <li><a href="about_team.html" target="_blank">和谐团队</a></li>
+            <li><a href="about_news.html" target="_blank">和谐新闻</a></li>
+          </ul>
+        </li>
+        <li class="clearfix"></li>
+      </ul>
+    </div>
+    <!--nav-->
+    <div class="navright">
+        <div class="searchbox">
+            <input placeholder="商品名称/车型">
+            <button><img src="images/indexb_20.png"></button>
+        </div>
+            <div class="tel">
+            <p>服务热线：<b>400-916-1999</b></p>
+            </div>
+    </div>
+	<div class="clearfix"></div>
+</div>
+</div>
+<!--top-->
+
+<div class="main">
+<div class="container">
+	<div class="weizhi"><a href="index.html">首页</a> > <a href="">保养项目查询</a></div>
+	<img src="images/baoyangxm_03.png" class="tishi">
+    <div class="set">
+        <img src="images/car_18.png" alt="" class="carlogo">
+        <p><span>宝马7系(进口)</span><span>3.0T</span><span>2015年产</span></p>
+        <a rel="leanModal" href="#lovecar" class="reset">重选</a>
+        <div class="kilo">当前行驶里数：<input id="distance" type="text">公里</div>
+        <div class="onRoadTime">新车上路时间： 
+        <select>
+        <option>2015年</option>
+        <option>2014年</option>
+        <option>2013年</option>
+        <option>2012年</option>
+        <option>2011年</option>
+        <option>2010年</option>
+        <option>2009年</option>
+        <option>2008年</option>
+        <option>2007年</option>
+        <option>2006年</option>
+        <option>2005年</option>
+        <option>2004年</option>
+        <option>2003年</option>
+        <option>2002年</option>
+        <option>2001年</option>
+        <option>2000年</option>
+        </select>
+        <select>
+        <option>1月</option>
+        <option>2月</option>
+        <option>3月</option>
+        <option>4月</option>
+        <option>5月</option>
+        <option>6月</option>
+        <option>7月</option>
+        <option>8月</option>
+        <option>9月</option>
+        <option>10月</option>
+        <option>11月</option>
+        <option>12月</option>
+        </select></div>
+        <a href="" class="chakan">看看爱车该做哪些保养了？</a>
+    </div>
+	
+    <div class="tuijian">
+        <!--<div class="tit">
+        <span><img src="images/indexb_80.png" alt=""><b>推荐保养项目</b></span>
+        </div>-->
+        <div class="block">
+        <ul>
+        <li id="tuijian1">
+        <img class="tui1" src="images/indexb_85.png" alt="">
+        <img class="tui2" src="images/indexb1_83.png" alt="">
+        <span>小保养服务</span>
+        </li>
+        <li id="tuijian2">
+        <img class="tui1" src="images/indexb_88.png" alt="">
+        <img class="tui2" src="images/indexb1_86.png" alt="">
+        <span>大保养服务</span>
+        </li>
+        <li id="tuijian3">
+        <img class="tui1" src="images/indexb_91.png" alt="">
+        <img class="tui2" src="images/indexb1_89.png" alt="">
+        <span>雨刷</span>
+        </li>
+        <li id="tuijian4">
+        <img class="tui1" src="images/indexb_93.png" alt="">
+        <img class="tui2" src="images/indexb1_91.png" alt="">
+        <span>空调制冷剂</span>
+        </li>
+        <li id="tuijian5">
+        <img class="tui1" src="images/indexb_96.png" alt="">
+        <img class="tui2" src="images/indexb1_94.png" alt="">
+        <span>空调滤清器</span>
+        </li>
+        <li id="tuijian6">
+        <img class="tui1" src="images/indexb_98.png" alt="">
+        <img class="tui2" src="images/indexb1_96.png" alt="">
+        <span>防冻液</span>
+        </li>
+        <li id="tuijian7">
+        <img class="tui1" src="images/indexb_100.png" alt="">
+        <img class="tui2" src="images/indexb1_98.png" alt="">
+        <span>火花塞</span>
+        </li>
+        <li id="tuijian8">
+        <img class="tui1" src="images/indexb_124.png" alt="">
+        <img class="tui2" src="images/indexb1_122.png" alt="">
+        <span>蓄电池</span>
+        </li>
+        <li id="tuijian9">
+        <img class="tui1" src="images/indexb_109.png" alt="">
+        <img class="tui2" src="images/indexb1_107.png" alt="">
+        <span>刹车油</span>
+        </li>
+        <li id="tuijian10">
+        <img class="tui1" src="images/indexb_111.png" alt="">
+        <img class="tui2" src="images/indexb1_109.png" alt="">
+        <span>内置燃油滤</span>
+        </li>
+        <li id="tuijian11">
+        <img class="tui1" src="images/indexb_113.png" alt="">
+        <img class="tui2" src="images/indexb1_111.png" alt="">
+        <span>刹车盘</span>
+        </li>
+        <li id="tuijian12">
+        <img class="tui1" src="images/indexb_116.png" alt="">
+        <img class="tui2" src="images/indexb1_114.png" alt="">
+        <span>刹车片</span>
+        </li>
+        <li id="tuijian13">
+        <img class="tui1" src="images/indexb_119.png" alt="">
+        <img class="tui2" src="images/indexb1_117.png" alt="">
+        <span>发动机内部清洗</span>
+        </li>
+        <li id="tuijian14">
+        <img class="tui1" src="images/indexb_121.png" alt="">
+        <img class="tui2" src="images/indexb1_119.png" alt="">
+        <span>空调管路清洗</span>
+        </li>
+        </ul>
+        </div>
+    </div>
+    <div class="div">
+        <div class="list">
+            <div class="listtit">
+            <ul>
+                <li>保养项目</li>
+                <li>已选产品</li>
+                <li>单价</li>
+                <li>数量</li>
+            </ul>
+            </div>
+            <div class="xiangmu" id="xiangmu1">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_85.png"><span>小保养服务</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>469.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span class="pack_tt1">机油</span><p class="pack_tt2">（参考用量：5L）</p></td>
+                <td class="divbox">
+                    <div class="box">
+                        <p class="guige"><a class="on">Shell/壳牌 灰喜力HX8 灰壳5W40 SN级<br>全合成机油 （4L装）</a></p>
+                        <p class="price">￥255.0</p>
+                        <div class="num">
+                            <div class="jisuan">
+                                <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                                <input type="text" class="num" value="1">
+                                <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                            </div>
+                        </div>
+                        <p class="delete"></p>
+                    </div>
+                    <div class="box">
+                        <p class="guige"><a>壳牌机油 壳牌灰喜力 HX8灰壳全合成机油5W-40 SN （1L）</a></p>
+                        <p class="price">￥255.0</p>
+                        <div class="num">
+                            <div class="jisuan">
+                                <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                                <input type="text" class="num" value="1">
+                                <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                            </div>
+                        </div>
+                        <p class="delete"></p>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="ming"><span class="pack_tt1">机油滤清器</span></td>
+                <td>
+                    <div class="box">
+                        <p class="guige"><a>马勒/MAHLE 机油滤清器 0C1022</a></p>
+                        <p class="price">￥255.0</p>
+                        <div class="num">
+                            <div class="jisuan">
+                                <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                                <input type="text" class="num" value="1">
+                                <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                            </div>
+                        </div>
+                        <p class="delete"></p>
+                    </div>
+                </td>
+              </tr>
+            </table>
+            </div>
+            
+            <script>
+            $(function(){
+                $(".delete").click(function(){
+                    $(this).parents(".box").hide();
+                    var l=$(this).parents(".box").parents(".divbox").height();
+                    if(l<60){
+                        $(this).parents("tr").hide();
+                    }else{}
+                })
+            })	
+            </script>
+            <div class="xiangmu" id="xiangmu2">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_88.png"><span>大保养</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu3">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_91.png"><span>雨刷</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu4">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_93.png"><span>空气制冷机</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu5">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_96.png"><span>空气滤清器</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu6">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_98.png"><span>防冻液</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu7">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_100.png"><span>火花塞</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu8">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_124.png"><span>蓄电池</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu9">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_109.png"><span>刹车油</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu10">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_111.png"><span>内置燃油滤</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu11">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_113.png"><span>刹车盘</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu12">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_116.png"><span>刹车片</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu13">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_119.png"><span>发动机内部清洗</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="xiangmu" id="xiangmu14">
+            <div class="onex">
+                <div class="onexleft"><img src="images/indexb2_121.png"><span>空调管路清洗</span></div>
+                <div class="delete"><img src="images/baoyangxm_09.png" onMouseOver="this.src='images/baoyangxm_14.png'" onMouseOut="this.src='images/baoyangxm_09.png'"></div>
+                <div class="refresh"><img src="images/baoyangxm_07.png" onMouseOver="this.src='images/baoyangxm_13.png'" onMouseOut="this.src='images/baoyangxm_07.png'"></div>
+                <div class="onexright"><p>小计：<span>80.0</span></p></div>
+            </div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="ming"><span>发动机清洗</span></td>
+                <td class="guige"><a>道达尔/Ttoal  发动机清洗油  4L</a></td>
+               <td class="price">￥80</td>
+                <td class="num"><div class="num">
+                <div class="jisuan">
+                    <span class="jian"><img src="images/baoyangxm_18.png"></span>
+                    <input type="text" class="num" value="1">
+                    <span class="jia"><img src="images/baoyangxm_20.png"></span>
+                </div>
+             </div></td>
+              </tr>
+            </table>
+            </div>
+            <div class="heji">
+            <p class="gong">共 <span>4</span> 件商品  <span>总价：<span>￥549.00</span></span></p>
+            <div class="xieyi"><input type="radio" checked="checked" name="check1" value="check1">
+             <!--<label name="check1" class="remember" for="nba">郑州郑东新区和谐车门店</label>--><a rel="leanModal" href="#explain">（安装及费用标准说明）<img src="images/baoyangxm_28.png"></a><span>：￥159.00</span></div>
+            <p class="totle">合计金额：<span>￥708.00</span></p>
+             <div class="caozuo">
+                <a href="" class="buycar"><img src="images/special_12.png">加入购物车</a>
+                <a href="checkdd.html" class="buynow">立即购买</a>
+            </div>
+        </div>
+        </div>
+        <div class="shouce">
+            <h3 class="sctit">查看保养手册</h3>
+            <div class="scimg"><img src="images/shouce.png"></div>
+            <p>提示：点击左侧产品栏，可更换相应产品。</p>
+        </div>
+        <div class="cpxq inventory_right">
+        	<div class="cptit">
+            <span class="close"><img src="images/closebtn1.png"></span>
+            	<h3>更多可选产品</h3>
+                	<select>
+                    	<option>全部品牌</option>
+                        <option>3M</option>
+                        <option>神彩</option>
+                    </select>
+                	<select>
+                    	<option>全部类型</option>
+                        <option>3M</option>
+                        <option>神彩</option>
+                    </select>
+            </div>
+            <div class="productList clearfix opened">
+           		<div class="change">
+                <div class="item currpro clearfix">
+                    <a class="img" target="_blank" href="cp_xq.html">
+                    <img alt="" src="images/dadada2.jpg">
+                    </a>
+                    <a class="name" target="_blank" title="" href="cp_xq.html">
+                    <span class="icon-label">
+                    当前产品
+                    <i class="arrow"></i>
+                    </span>
+                    <div class="productTitle">
+                    嘉实多/Castrol 金嘉护矿物机油 10W-40 SN级（4L装）
+                    <span class="itemTag qianscp">矿物油</span>
+                    </div>
+                    </a>
+                    <div class="price">48.00</div>
+                </div>
+                <div class="item currpro clearfix">
+                    <a class="img" target="_blank" href="cp_xq.html">
+                    <img alt="" src="images/dadada3.jpg">
+                    </a>
+                    <a class="name" target="_blank" title="" href="cp_xq.html">
+                    <span class="icon-label">
+                    当前产品
+                    <i class="arrow"></i>
+                    </span>
+                    <div class="productTitle">
+                    嘉实多/Castrol 金嘉护矿物机油 10W-40 SN级（4L装）
+                    <span class="itemTag qianscp">矿物油</span>
+                    </div>
+                    </a>
+                    <div class="price">128.00</div>
+                </div>
+                <div class="item currpro clearfix">
+                    <a class="img" target="_blank" href="cp_xq.html">
+                    <img alt="" src="images/dadada.jpg">
+                    </a>
+                    <a class="name" target="_blank" title="" href="cp_xq.html">
+                    <span class="icon-label">
+                    当前产品
+                    <i class="arrow"></i>
+                    </span>
+                    <div class="productTitle">
+                    嘉实多/Castrol 金嘉护矿物机油 10W-40 SN级（4L装）
+                    <span class="itemTag qianscp">矿物油</span>
+                    </div>
+                    </a>
+                    <div class="price">98.00</div>
+                </div>
+              </div>
+                <div class="changedq">
+                    <div class="item clearfix">
+                        <a class="img" target="_blank" href="cp_xq.html">
+                        <img alt="" src="images/dadada2.jpg">
+                        </a>
+                        <a class="name" target="_blank" title="" href="cp_xq.html">
+                        <span class="productTitle">壳牌/Shell 喜力矿物机油HX5 10W-40 SN级 黄壳（4L装）</span>
+                        <span class="itemTag qianscp">矿物油</span>
+                        </a>
+                        <div class="price">¥48.00</div>
+                        <a class="op UnSelect " href="#carInfo_switch">更换 </a>
+                    </div>
+                    <div class="item clearfix">
+                        <a class="img" target="_blank" href="cp_xq.html">
+                        <img alt="" src="images/dadada3.jpg">
+                        </a>
+                        <a class="name" target="_blank" title="" href="cp_xq.html">
+                        <span class="productTitle">壳牌/Shell 喜力矿物机油HX5 10W-40 SN级 黄壳（4L装）</span>
+                        <span class="itemTag qianscp">矿物油</span>
+                        </a>
+                        <div class="price">¥128.00</div>
+                        <a class="op UnSelect " href="#carInfo_switch">更换 </a>
+                    </div>
+                    <div class="item clearfix disabled">
+                        <a class="img" target="_blank" href="cp_xq.html">
+                        <img alt="" src="images/dadada.jpg">
+                        </a>
+                        <a class="name" target="_blank" title="" href="cp_xq.html">
+                        <span class="productTitle">壳牌/Shell 喜力矿物机油HX5 10W-40 SN级 黄壳（4L装）</span>
+                        <span class="itemTag qianscp">矿物油</span>
+                        </a>
+                        <div class="price">¥98.00</div>
+                        <a class="op UnSelect" href="#carInfo_switch">更换</a>
+                    </div>
+                </div>
+           		<div class="tabcon UnSelect">
+                <div class="prev">
+                <span class="btnArrLeft"></span>
+                上一页
+                </div>
+                <div class="next active" data-page="2">
+                下一页
+                <span class="btnArrRight"></span>
+                </div>
+            </div>
+			</div>
+            
+            <div class="productList clearfix opened">
+           		<div class="change">
+                <div class="item currpro clearfix">
+                    <a class="img" target="_blank" href="cp_xq.html">
+                    <img alt="" src="images/dadada2.jpg">
+                    </a>
+                    <a class="name" target="_blank" title="" href="cp_xq.html">
+                    <span class="icon-label">
+                    当前产品
+                    <i class="arrow"></i>
+                    </span>
+                    <div class="productTitle">
+                    222222嘉实多/Castrol 金嘉护矿物机油 10W-40 SN级（4L装）
+                    <span class="itemTag qianscp">矿物油</span>
+                    </div>
+                    </a>
+                    <div class="price">48.00</div>
+                </div>
+                <div class="item currpro clearfix">
+                    <a class="img" target="_blank" href="cp_xq.html">
+                    <img alt="" src="images/dadada3.jpg">
+                    </a>
+                    <a class="name" target="_blank" title="" href="cp_xq.html">
+                    <span class="icon-label">
+                    当前产品
+                    <i class="arrow"></i>
+                    </span>
+                    <div class="productTitle">
+                    22222嘉实多/Castrol 金嘉护矿物机油 10W-40 SN级（4L装）
+                    <span class="itemTag qianscp">矿物油</span>
+                    </div>
+                    </a>
+                    <div class="price">128.00</div>
+                </div>
+                <div class="item currpro clearfix">
+                    <a class="img" target="_blank" href="cp_xq.html">
+                    <img alt="" src="images/dadada.jpg">
+                    </a>
+                    <a class="name" target="_blank" title="" href="cp_xq.html">
+                    <span class="icon-label">
+                    当前产品
+                    <i class="arrow"></i>
+                    </span>
+                    <div class="productTitle">
+                    22222嘉实多/Castrol 金嘉护矿物机油 10W-40 SN级（4L装）
+                    <span class="itemTag qianscp">矿物油</span>
+                    </div>
+                    </a>
+                    <div class="price">98.00</div>
+                </div>
+              </div>
+                <div class="changedq">
+                    <div class="item clearfix">
+                        <a class="img" target="_blank" href="cp_xq.html">
+                        <img alt="" src="images/dadada2.jpg">
+                        </a>
+                        <a class="name" target="_blank" title="" href="cp_xq.html">
+                        <span class="productTitle">壳牌/Shell 喜力矿物机油HX5 10W-40 SN级 黄壳（4L装）</span>
+                        <span class="itemTag qianscp">矿物油</span>
+                        </a>
+                        <div class="price">¥48.00</div>
+                        <a class="op UnSelect " href="#carInfo_switch">更换 </a>
+                    </div>
+                    <div class="item clearfix">
+                        <a class="img" target="_blank" href="cp_xq.html">
+                        <img alt="" src="images/dadada3.jpg">
+                        </a>
+                        <a class="name" target="_blank" title="" href="cp_xq.html">
+                        <span class="productTitle">壳牌/Shell 喜力矿物机油HX5 10W-40 SN级 黄壳（4L装）</span>
+                        <span class="itemTag qianscp">矿物油</span>
+                        </a>
+                        <div class="price">¥128.00</div>
+                        <a class="op UnSelect " href="#carInfo_switch">更换 </a>
+                    </div>
+                    <div class="item clearfix disabled">
+                        <a class="img" target="_blank" href="cp_xq.html">
+                        <img alt="" src="images/dadada.jpg">
+                        </a>
+                        <a class="name" target="_blank" title="" href="cp_xq.html">
+                        <span class="productTitle">壳牌/Shell 喜力矿物机油HX5 10W-40 SN级 黄壳（4L装）</span>
+                        <span class="itemTag qianscp">矿物油</span>
+                        </a>
+                        <div class="price">¥98.00</div>
+                        <a class="op UnSelect" href="#carInfo_switch">更换</a>
+                    </div>
+                </div>
+           		<div class="tabcon UnSelect">
+                <div class="prev">
+                <span class="btnArrLeft"></span>
+                上一页
+                </div>
+                <div class="next active" data-page="2">
+                下一页
+                <span class="btnArrRight"></span>
+                </div>
+            </div>
+			</div>
+                      
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+		jQuery(".productList").slide({mainCell:".change",titCell:".changedq .item",trigger:"click",titOnClassName:"disabled"});
+		jQuery(".div").slide({targetCell:".productList",titCell:".guige a",trigger:"click",titOnClassName:"on"});
+</script>
+
+
+<!--footer-->
+<div class="footer">
+  <div class="container">
+    <dl class="foot">
+      <dt>服务简介</dt>
+      <dd><a href="foot_process.html">服务流程</a></dd>
+      <dd><a href="foot_security.html">服务保障</a></dd>
+      <dd><a href="foot_warranty.html">产品保修</a></dd>
+      <dd><a href="foot_agreement.html">用户协议</a></dd>
+    </dl>
+    <dl class="foot">
+      <dt>支付方式</dt>
+      <dd><a href="foot_treasure.html">支付宝支付</a></dd>
+      <dd><a href="foot_payment.html">到店付款</a></dd>
+    </dl>
+    <dl class="foot">
+      <dt>服务热线</dt>
+      <dd>400-916-1999</dd>
+      <dd>周一至周日</dd>
+      <dd>8:00-22:00</dd>
+    </dl>
+    <dl class="foot">
+      <dt>服务网络</dt>
+      <dd><a href="network_map.html">服务网络地图</a></dd>
+    </dl>
+    <dl class="foot">
+      <dt>联系我们</dt>
+      <dd><a href="foot_cooperation.html">广告与市场合作</a></dd>
+      <dd><a href="foot_contact.html">联系方式</a></dd>
+      <dd><a href="foot_phone.html">投诉电话</a></dd>
+      <dd><a href="foot_recruitment.html">招贤纳士</a></dd>
+    </dl>
+  </div>
+</div>
+<!--footer--> 
+
+<!--右侧快捷方式-->
+<div class="quick">
+<ul>
+<li>
+<img src="images/indexb_42.png" class="nth-child1">
+<img src="images/indexb_422.png" class="nth-child2">
+<span><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2853102678&site=qq&menu=yes">在线咨询</a></span>
+</li>
+<li class="weixin">
+<img src="images/indexb_52.png" class="nth-child1">
+<img src="images/indexb_522.png" class="nth-child2">
+<span class="weixin">微信</span>
+<div class="code">
+<img src="images/indexp_49.jpg" alt="">
+</div>
+</li>
+<li class="shouji">
+<img src="images/indexb_64.png" class="nth-child1">
+<img src="images/indexb_642.png" class="nth-child2">
+<span><a href="">手机网站</a></span>
+<div class="code1">
+<img src="images/indexp_49.jpg" alt="">
+</div>
+</li>
+<li>
+<a href="https://hexieqiche.tmall.com/ " target="_blank"><img src="images/shouye_06.png" class="nth-child1"><img src="images/shouye_062.png" class="nth-child2"><span>天猫店</span></a>
+</li>
+<li>
+<a href="http://hexieauto.jd.com/ " target="_blank"><img src="images/shouye_10.png" class="nth-child1"><img src="images/shouye_102.png" class="nth-child2"><span>京东店</span></a>
+</li>
+<li class="gotop">
+<img src="images/indexb_76.png" class="nth-child1">
+<img src="images/indexb_762.png" class="nth-child2">
+<span>返回顶部</span>
+</li>
+</ul>
+</div>
+<!--右侧快捷方式-->
+
+<!--城市选择弹窗-->
+<div id="selectcity" class="popbox">
+	<div class="popmain">
+    <span class="closebtn"></span>
+	<h3>城市选择</h3>
+    <div class="hot">
+    <h4>热门城市</h4>
+    <div class="tip">
+    	<a href="">郑州</a>
+        <a href="">北京</a>
+        <a href="">上海</a>
+        <a href="">广州</a>
+        <a href="">深圳</a>
+        <a href="">济南</a>
+        <a href="">武汉</a>
+        <a href="">西安</a>
+        <a href="">杭州</a>
+        <a href="">重庆</a>
+    </div>
+    </div>
+    
+    <div class="choose">
+    <span>按省份选择：</span>
+    <select name="P1"></select><select name="C1"></select>
+    <button>确定</button>
+    </div>
+    <script language="javascript" defer>
+	new PCAS("P1","C1");
+	</script>
+    </div>
+</div>
+<!--城市选择弹窗-->
+
+<!--登录弹窗开始-->
+<div id="loginbox" class="popbox">
+  <div class="popmain"> <span class="closebtn"></span>
+    <h3>登录</h3>
+    <div class="login">
+      <p>手机:</p>
+      <input style="background:url(images/login_03.png) no-repeat 230px center;">
+      <p>密码：</p>
+      <input style="background:url(images/login_06.png) no-repeat 230px center;">
+      <div class="link"> <a rel="leanModal" href="#forgetbox" onClick="$('#loginbox').hide();" class="wangji">忘记密码？</a><a href="#registerbox" rel="leanModal" onClick="$('#loginbox').hide();" class="zhuce">免费注册账号</a> </div>
+      <button>登录</button>
+    </div>
+  </div>
+</div>
+<!--登录弹窗结束-->
+
+<!--注册弹窗开始-->
+<div id="registerbox" class="popbox">
+  <div class="popmain"> <span class="closebtn"></span>
+    <h3>注册</h3>
+    <div class="login">
+      <p>手机：</p>
+      <input style="background:url(images/login_03.png) no-repeat 230px center;">
+      <p>车型：</p>
+      <input style="background:url(images/login_04.png) no-repeat 230px center;" placeholder="请输入车型信息，如：宝马525i">
+      <p>密码：</p>
+      <input style="background:url(images/login_06.png) no-repeat 230px center;">
+      <p>确认密码：</p>
+      <input style="background:url(images/login_06.png) no-repeat 230px center;">
+      <p>验证码：</p>
+      <div class="yanzheng">
+        <input>
+        <img src="images/login_09.png"> <a href="">换一张</a> </div>
+      <p>短信验证码：</p>
+      <div class="yanzheng1">
+        <input>
+        <a href="">获取短信验证码</a> </div>
+      <div class="read">
+        <input type="radio" checked="checked" name="check1" value="check1">
+        <label name="check1" class="remember" for="nba"></label>已经同意并阅读《<a href="foot_agreement.html">和谐汽车网用户注册条款</a>》
+      </div>
+      <button>注册</button>
+    </div>
+  </div>
+</div>
+<!--注册弹窗结束--> <!--忘记密码开始-->
+<div id="forgetbox" class="popbox">
+  <div class="popmain"> <span class="closebtn"></span>
+    <h3>找回密码</h3>
+    <div class="login">
+      <p>手机：</p>
+      <input style="background:url(images/login_03.png) no-repeat 230px center;">
+      <p>验证码：</p>
+      <div class="yanzheng">
+        <input>
+        <img src="images/login_09.png"> <a href="">换一张</a> </div>
+      <a href="" class="button">获取密码</a> <a rel="leanModal" href="#loginbox" onClick="$('#forgetbox').hide();" class="button">立即登录</a> </div>
+  </div>
+</div>
+<!--忘记密码结束-->
+
+<!--选择车型弹窗开始-->
+<div id="lovecar">
+	<span class="closebtn"></span>
+<div class="popmain">
+	<h3>车型选择</h3>
+    <div class="foursteps1">
+        <span id="cx1" class="head_div2">
+        <span id="cxspan1" class="round">1</span>
+        选择品牌
+        </span>
+        <span id="cx2" class="head_div3">
+        <span id="cxspan2" class="round2">2</span>
+        选择车系
+        </span>
+        <span id="cx3" class="head_div3">
+        <span id="cxspan3" class="round2">3</span>
+        选择排量
+        </span>
+        <span id="cx4" class="head_div3">
+        <span id="cxspan4" class="round2">4</span>
+        生产年份
+        </span>
+    </div>
+    <div class="choosed">
+        <div class="ct">已选车型：</div>
+        <div class="CarHistoryTitlediv data-index1">
+            <div class="CarHistoryTitle"> 宝马</div>
+            <div class="CarHistoryTitleDel"></div>
+        </div>
+         <div class="CarHistoryTitlediv data-index2">
+            <div class="CarHistoryTitle">2系</div>
+            <div class="CarHistoryTitleDel"></div>
+        </div>
+         <div class="CarHistoryTitlediv data-index3">
+            <div class="CarHistoryTitle">3.0T</div>
+            <div class="CarHistoryTitleDel"></div>
+        </div>
+         <div class="CarHistoryTitlediv data-index4">
+            <div class="CarHistoryTitle">2014</div>
+            <div class="CarHistoryTitleDel"></div>
+        </div>
+    </div>
+    <div class="step step1">
+    <ul>
+    <li><i class="tp"><img src="images/car_18.png" alt=""></i><span>宝马</span></li>
+    <li><i class="tp"><img src="images/car_20.png" alt=""></i><span>奔驰</span></li>
+    <li><i class="tp"><img src="images/car_22.png" alt=""></i><span>奥迪</span></li>
+    <li><i class="tp"><img src="images/car_24.png" alt=""></i><span>捷豹</span></li>
+    <li><i class="tp"><img src="images/car_30.png" alt=""></i><span>路虎</span></li>
+    <li><i class="tp"><img src="images/car_31.png" alt=""></i><span>沃尔沃</span></li>
+    <li><i class="tp"><img src="images/car_63.png" alt=""></i><span>现代</span></li>
+    <li><i class="tp"><img src="images/car_33.png" alt=""></i><span>雷克萨斯</span></li>
+    <li><i class="tp"><img src="images/car_38.png" alt=""></i><span>保时捷</span></li>
+    <li><i class="tp"><img src="images/car_39.png" alt=""></i><span>法拉利</span></li>
+    <li><i class="tp"><img src="images/car_40.png" alt=""></i><span>宾利</span></li>
+    <li><i class="tp"><img src="images/car_41.png" alt=""></i><span>劳斯莱斯</span></li>
+    <li><i class="tp"><img src="images/car_46.png" alt=""></i><span>兰博基尼</span></li>
+    <li><i class="tp"><img src="images/car_47.png" alt=""></i><span>英菲尼迪</span></li>
+    <li><i class="tp"><img src="images/car_48.png" alt=""></i><span>讴歌</span></li>
+    <li><i class="tp"><img src="images/car_49.png" alt=""></i><span>红旗</span></li>
+    <li><i class="tp"><img src="images/car_54.png" alt=""></i><span>大众</span></li>
+    <li><i class="tp"><img src="images/car_55.png" alt=""></i><span>福特</span></li>
+    <li><i class="tp"><img src="images/car_56.png" alt=""></i><span>丰田</span></li>
+    <li><i class="tp"><img src="images/car_57.png" alt=""></i><span>本田</span></li>
+    <li><i class="tp"><img src="images/car_62.png" alt=""></i><span>别克</span></li>
+    </ul>
+    </div>
+    <div class="step step2">
+    <div class="lei"><span>华晨宝马</span></div>
+    <ul>
+        <li>3系</li>
+        <li>3系</li>
+        <li>3系</li>
+    </ul>
+    <div class="lei"><span>宝马进口</span></div>
+    <ul>
+        <li>1系</li>
+        <li>2系</li>
+        <li>3系</li>
+        <li>4系</li>
+        <li>5系</li>
+        <li>6系</li>
+        <li>7系</li>
+        <li>i系</li>
+        <li>M系</li>
+        <li>X系</li>
+        <li>Z系</li>
+    </ul>
+    </div>
+    <div class="step step3">
+    <ul>
+        <li>3.0T</li>
+    </ul>
+    </div>
+    <div class="step step4">
+    <ul>
+        <li>2015年生产</li>
+        <li>2014年生产</li>
+        <li>2013年生产</li>
+        <li>2012年生产</li>
+    </ul>
+    </div>
+    <div class="step step5">
+    <div class="sucess"><img src="images/sucess.png"><span>车型选择成功</span></div>
+    <p>已选车型：宝马 335Li3.0T2013年产</p>
+    </div>
+    
+</div>
+</div>
+<!--选择车型弹窗结束-->
+
+<!--安装说明-->
+<div id="explain" class="explain">
+	<h2>安装费详细说明</h2>
+    <span class="closebtn"></span>
+    <div class="explain_content">
+    	<table>
+        	<tbody>
+            	<tr>
+                	<th>服务项目</th>
+                    <th>配件名称</th>
+                    <th>服务标准</th>
+                    <th>收费标准</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                	<td>空调管路清洗</td>
+                    <td>空调管路清洗剂</td>
+                    <td>副驾位空调滤车型，需拆装手套箱等附件；本项目含电器防潮保护，清洗空调风道及蒸发箱；</td>
+                    <td>¥30.00</td>
+                    <td>[主驾位空调滤车型]，需拆装油门踏板等附件，需补门店20元/只差价；[外置式空调滤车型]，需拆装前挡玻璃流水槽等附件，需补门店20元/只差价；</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--安装说明-->
+</body>
+</html>

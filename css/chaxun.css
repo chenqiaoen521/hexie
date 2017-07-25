@@ -1,0 +1,44 @@
+/* CSS Document */
+
+/*保养查询*/
+.main{}
+	.guide{ line-height:30px; color:#555555; font-size:14px; clear:both;}
+	.guide a{ color:#555555;}
+	.guide a:hover{ text-decoration:underline;color:#bc0000;}
+	.sub{ overflow:hidden; margin:10px 0; min-height:600px;}
+	.sub h4{ color:#333333; font-size:20px; line-height:40px; display:block; text-align:center;}
+	
+	
+	
+	.slideTxtBox{ overflow:hidden;}
+	
+		.slideTxtBox .hd1{padding:0 10px 0 20px;  position:relative; overflow:hidden;}
+		.slideTxtBox .hd1 b{ float:left; font-size:16px; padding-top:23px; font-weight:normal;}
+		
+		.slideTxtBox .hd1 ul{ overflow:hidden; margin:0 auto;}
+		.slideTxtBox .hd1 ul li{ float:left; overflow:hidden; width:120px; border:#e0e0e0 1px solid; margin:0 9px 6px 9px; cursor:pointer;}
+		.slideTxtBox .hd1 ul li p>a{ color:#1a1a1a;}
+		.slideTxtBox .hd1 ul li:hover{ border:#c09b54 1px solid;}
+		.slideTxtBox .hd1 .cha{ width:66px; height:44px; margin:0 auto; padding-top:2px;}
+		.slideTxtBox .hd1 .cha img{ width:100%; height:100%;}
+		.slideTxtBox .hd1 ul li.on{border:1px solid #c09b54;}
+		
+		
+		
+		.slideTxtBox .bd1 img{ margin:0 auto; min-width:800px;}
+		.slideTxtBox .bd1 ul{ padding:15px;  zoom:1;  }
+		.slideTxtBox .bd1 .tab{ width:800px; margin:0 auto; overflow:hidden; margin-bottom:10px; border:#a3a2a 1px solid !important;}
+		.slideTxtBox .bd1 .tab table{ width:800px; overflow:hidden; margin:10px 0;}
+		.slideTxtBox .bd1 .tab table td{ text-align:center; height:45px; line-height:45px; background-color:#efefef; border:#FFF 1px solid; color:#333333;}
+		.slideTxtBox .bd1 .tab .pinpai{ overflow:hidden;}
+		.slideTxtBox .bd1 .tab .pinpai img{ width:66px; height:44px; margin:0 auto;}
+		.slideTxtBox .bd1 .tab .pinpai p{color:#333333; font-size:16px; text-align:center; line-height:32px !important;}
+		.slideTxtBox .bd1 .tab table td>img{ width:9px; height:9px; margin:0 auto;}
+		.slideTxtBox .bd1 .tab table th{ background-color:#c09b54; color:#fff; font-size:14px; height:65px; font-weight:normal; border-right:#fff 1px solid;}
+		.slideTxtBox .bd1 .tab .column{ overflow:hidden; background:url(../images/cinxun1.png) no-repeat left top #c09b54; width:150px;}
+		.slideTxtBox .bd1 .tab .column span{ display:block; width:75px;}
+		.slideTxtBox .bd1 .tab .column .a{ float:right; text-align:right; padding-right:10px;}
+		.slideTxtBox .bd1 .tab .column .b{ float:left; margin-top:10px;}
+		.slideTxtBox p{ text-align:center; color:#666666;  font-size:14px;}
+
+/*保养查询*/

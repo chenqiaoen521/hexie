@@ -1,0 +1,77 @@
+/* CSS Document */
+
+/*会员俱乐部*/
+.main{}
+	.guide{ line-height:30px; color:#555555; font-size:14px; clear:both;}
+	.guide a{color:#555555;}
+	.guide a:hover{ text-decoration:underline;color:#bc0000;}
+	.sub{ overflow:hidden; margin:10px 0;}
+		.sub_nav{ float:left; border-top:#bf9d5b 5px solid;}
+		.sub_nav h3{ font-size:20px; line-height:68px; font-weight:bold;border:#dcdcdc 1px solid; border-bottom:none;padding-left:40px;color:#555555;}
+		.sub_nav ul{width:215px; border:#dcdcdc 1px solid;}
+		.sub_nav ul li a{ display:block; line-height:48px; font-size:16px; padding-left:40px; color:#666666;}
+		.sub_nav .sub_cur{ color:#FFF; background-color:#b4862c;}
+		.ciub_login{overflow:hidden; float:right; width:960px; min-height:600px;}
+			.login_img{ float:left; overflow:hidden; padding:20px 0 0 60px;}
+			.login_rk{ overflow:hidden; float:left; overflow:hidden; padding-left:125px;}
+			.login_rk h2{ color:#bf9d5b; font-size:24px; line-height:100px;}
+			.login_rk h2>span{ color:#666666; font-size:18px; display:inline-block; padding-left:10px;}
+			.login_rk p{ padding:10px 0; overflow:hidden;}
+			.login_rk label{ text-align:right;line-height:38px; display:inline-block; width:100px; font-size:14px; color:#666666; float:left;}
+			.login_rk input{ padding:0 10px; width:300px; border:#dddddd 1px solid; font-size:12px; color:#999999;line-height:38px; height:38px; float:left;}
+			.login_rk .icon{ padding:10px 0 10px 100px !important;}
+			.login_rk .check{ float:left; overflow:hidden; width:14px; padding-left:100px; border:none;}
+			.login_rk i{ float:left; overflow:hidden; line-height:38px; padding-left:5px; color:#666666;}
+			.login_rk a{ float:left; overflow:hidden; line-height:38px; padding-left:35px; color:#1369ac;}
+			.login_rk a:hover{color:#2b7c6e; text-decoration:underline;}
+			.login_rk .btn{ width:320px; background-color:#c8ac78; border:#c8ac78 1px solid; color:#FFF; font-size:16px; text-align:center; cursor:pointer;}
+			.login_rk .btn:hover{ background-color:#2b7c6e; border:#2b7c6e 1px solid; transition:all 0.2s linear;}
+/*会员俱乐部*/
+
+
+/*会员服务*/
+.service{overflow:hidden; float:right; width:960px;}
+	.slideTxtBox{width:958px; border:1px solid #ddd; text-align:left;  }
+		.slideTxtBox .hd{ height:54px !important; line-height:54px; width:958px;background:#f0f0f0; border-bottom:1px solid #ddd;  position:relative; left:auto; bottom:0px; width:inherit; margin-left:0px;}
+		.slideTxtBox .hd ul{ float:left;  position:absolute; left:20px; top:-1px; height:54px;}
+		.slideTxtBox .hd ul li{ float:left; text-align:center; width:200px;cursor:pointer; color:#666666; font-size:18px;border-left:#f0f0f0 1px solid; border-right:#f0f0f0 1px solid;}
+		.slideTxtBox .hd ul li.on{ background:#fff;color:#bf9d5b; border-top:#bf0000 2px solid; border-left:#ddd 1px solid; border-right:#ddd 1px solid;}
+		.slideTxtBox .bd ul{ padding:30px;  zoom:1; overflow:hidden;}
+		.slideTxtBox .bd li{ border-bottom:#ededed 2px dashed; padding:10px 0;}
+		.slideTxtBox .bd h2{ color:#bf0000; font-size:14px; line-height:24px;}
+		.slideTxtBox .bd p{ color:#666666; font-size:14px; line-height:24px;}
+		.slideTxtBox .bd i{ font-size:16px; line-height:32px; color:#bf0000; display:block;}
+		.slideTxtBox .bd span{ font-size:16px; line-height:32px; color:#444444; display:block;}
+			.bd_box{ overflow:hidden; padding:20px 0;}
+				.bd_img{ width:330px; height:200px; overflow:hidden; float:left; overflow:hidden;}
+				.bd_img img{ width:100%; height:100%;}
+				.bd_list{ float:right; overflow:hidden; width:500px;padding:20px; border:#dddddd 1px solid; border-radius:15px;}
+				.bd_list>p{ line-height:36px !important; color:#555555 !important; font-size:14px !important;}
+/*会员服务*/
+
+/*推荐有礼*/
+.polite{overflow:hidden; float:right; width:900px; border:1px solid #ddd; padding:30px;}
+.polite img{ max-width:960px; margin:0 auto;}
+.polite p{ line-height:40px; padding:20px; font-size:14px; color:#666666;}
+/*推荐有礼*
+/
+/*会员活动*/
+.activity{overflow:hidden; float:right; width:900px; border:1px solid #ddd; padding:30px;}
+.activity ul{ width:960px; overflow:hidden;}
+.activity ul li{ float:left; overflow:hidden; border:#dddddd 1px solid; margin-right:56px; cursor:pointer;margin-bottom:40px; width:260px;}
+.activity ul li:hover{ border:#bf0000 1px solid; transition:all 0.2s linear;}
+.activity ul li:hover p{ color:#bf0000;transition:all 0.2s linear;}
+.activity ul li img{ width:260px; height:175px;}
+.activity ul li p{ padding:20px 0; color:#666666; font-size:14px; width:240px; margin:0 auto;text-align:center;}
+/*会员活动*/
+
+/*会员活动详情页面*/
+.activity_xq{overflow:hidden; float:right; width:900px; border:1px solid #ddd; padding:30px;}
+.activity_xq h2{ padding:10px 0; color:#666666; font-size:30px; text-align:center;font-weight:bold;}
+.activity_xq i{ padding:10px 20px; border-bottom:#dddddd 1px solid;color:#999999; font-size:14px; text-align:center; display:block; margin-bottom:40px;}
+.activity_xq p{ line-height:30px;color:#666666; font-size:14px; text-align:justify; padding:10px 0;}
+.activity_xq img{ max-width:940px; margin:0 auto; padding:10px 0;}
+	.order{ overflow:hidden; padding:50px 0;}
+	.order a{ color:#666666; line-height:28px; display:inline-block;border:#dddddd 1px solid; font-size:14px; padding:0 20px; margin:0 20px;}
+	.order a:hover{ background-color:#bf9d5b;color:#FFF;border:#bf9d5b 1px solid; transition:all 0.1s linear;}
+/*会员活动详情页面*/
